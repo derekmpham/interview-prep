@@ -15,8 +15,8 @@ function isUnique(str) {
 	return test;
 }
 
-// case for returning true
+// test case for returning true
 console.log(isUnique("cab"));
 
-// case for returning false
+// test case for returning false
 console.log(isUnique("javascript"));

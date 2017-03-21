@@ -1,4 +1,6 @@
-// create a linked list class
+"use strict";
+
+// Create a linked list class
 
 class LinkedList {
 	constructor() {
@@ -50,3 +52,26 @@ class LinkedList {
 		}
 	}
 }
+
+
+// test cases
+// create instance of LinkedList class
+var listOne = new LinkedList();
+
+// create linked list with 5 nodes
+listOne.addNodeToTail(1);
+listOne.addNodeToTail(2);
+listOne.addNodeToTail(3);
+listOne.addNodeToTail(4);
+listOne.addNodeToTail(5);
+console.log(listOne);
+
+// delete head and tail nodes
+listOne.deleteNode(1);
+listOne.deleteNode(5);
+// expect linked list to have 3 nodes
+console.log(listOne);
+
+// delete node in middle of linked list
+listOne.deleteNode(3);
+console.log(listOne);
