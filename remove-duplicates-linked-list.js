@@ -81,3 +81,48 @@ LinkedList.prototype.removeDuplicates = function() {
 	}
 };
 
+// test cases
+// test case for no duplicates (base case)
+var firstList = new LinkedList();
+firstList.addNodeToTail(8);
+// expect "No duplicates were found: empty or single node in linked list"
+firstList.removeDuplicates();
+console.log(firstList);
+
+// test case for two nodes with duplicates
+var secondList = new LinkedList();
+secondList.addNodeToTail(8);
+secondList.addNodeToTail(8);
+secondList.removeDuplicates();
+// expect to have only one node left
+console.log(secondList);
+
+// test case for two nodes without duplicates
+var thirdList = new LinkedList();
+thirdList.addNodeToTail(8);
+thirdList.addNodeToTail(9);
+thirdList.removeDuplicates();
+// expect to still have two nodes
+console.log(thirdList);
+
+// test case for removing duplicates at end of linked list
+var fourthList = new LinkedList();
+fourthList.addNodeToTail(1);
+fourthList.addNodeToTail(2);
+fourthList.addNodeToTail(3);
+fourthList.addNodeToTail(4);
+fourthList.addNodeToTail(1);
+fourthList.removeDuplicates();
+// expect to have only four nodes left
+console.log(fourthList);
+
+// test case for removing multiple duplicates from middle of linked list
+var fifthList = new LinkedList();
+fifthList.addNodeToTail(1);
+fifthList.addNodeToTail(2);
+fifthList.addNodeToTail(1);
+fifthList.addNodeToTail(1);
+fifthList.addNodeToTail(3);
+fifthList.removeDuplicates();
+// expect to have only three nodes left
+console.log(fifthList);
