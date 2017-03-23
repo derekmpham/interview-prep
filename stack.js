@@ -25,7 +25,7 @@ Stack.prototype.pop = function() {
 	return;
 };
 
-// test case
+// test cases
 var testStack = new Stack();
 testStack.push(1);
 testStack.push(2);

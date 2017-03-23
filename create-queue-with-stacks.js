@@ -30,18 +30,18 @@ Stack.prototype.pop = function() {
 // create queue implemented with two stacks
 function MyQueue() {
 	// first stack (inbox)
-	this.inbox = [];
+	this.inbox = new Stack();
 	// second stack (outbox)
-	this.outbox = [];
+	this.outbox = new Stack();
 }
 
-// push object into queue
-MyQueue.prototype.push = function(obj) {
+// push object into queue (enqueue)
+MyQueue.prototype.enqueue = function(obj) {
 	this.inbox.push(obj);
 }
 
-// pop object from queue and return it
-MyQueue.prototype.pop = function() {
+// pop object from queue (dequeue) and return it
+MyQueue.prototype.dequeue = function() {
 	// if second stack is empty, make sure fill up second stack before popping (objective: reverse order in first stack)
 	if(!this.outbox.length) {
 		// if first stack is empty
@@ -59,13 +59,14 @@ MyQueue.prototype.pop = function() {
 
 // test cases
 var testQueue = new MyQueue();
-testQueue.pop(1);
-testQueue.pop(2);
-testQueue.pop(3);
-testQueue.pop(4);
-testQueue.pop(5);
+testQueue.enqueue(1);
+testQueue.enqueue(2);
+testQueue.enqueue(3);
+testQueue.enqueue(4);
+testQueue.enqueue(5);
+// expect queue to have all five elements in inbox stack
 console.log(testQueue);
-
-
-
-
+testQueue.dequeue();
+testQueue.dequeue();
+testQueue.dequeue();
+console.log(testQueue);
