@@ -28,14 +28,18 @@ Stack.prototype.pop = function() {
 
 // sort stack in ascending order (main function in exercise)
 Stack.prototype.sort = function() {
+	// create output stack
 	var stackTwo = new Stack();
+
 
 	while(this.top) {
 		var placeHolder = this.pop();
 
 		while(stackTwo.top && stackTwo.top.data > placeHolder) {
+			// push the top element in output stack (larger value) into original stack
 			stackOne.push(stackTwo.pop());
 		}
+		// push element in placeholder into output stack
 		stackTwo.push(placeHolder);
 	}
 	console.log(stackTwo);
