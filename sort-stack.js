@@ -27,3 +27,25 @@ Stack.prototype.pop = function() {
 };
 
 // sort stack in ascending order (main function in exercise)
+Stack.prototype.sort = function() {
+	var stackTwo = new Stack();
+
+	while(this.top) {
+		var placeHolder = this.pop();
+
+		while(stackTwo.top && stackTwo.top.data > placeHolder) {
+			stackOne.push(stackTwo.pop());
+		}
+		stackTwo.push(placeHolder);
+	}
+	console.log(stackTwo);
+};
+
+
+
+
+
+
+
+
+
