@@ -1,4 +1,31 @@
+"use strict";
+
 // Program that uses 2 stacks to implement MyQueue class
+
+// create Stack class
+function Stack() {
+	this.top = null;
+}
+
+// push value into stack
+Stack.prototype.push = function(val) {
+	this.top = {
+		data: val,
+		next: this.top
+	};
+};
+
+// pop value from stack
+Stack.prototype.pop = function() {
+	var top = this.top;
+	if(top) {
+		var popData = top.data;
+		top = top.next;
+		return popData;
+	}
+	return;
+};
+
 
 // create queue implemented with two stacks
 function MyQueue() {
@@ -28,3 +55,17 @@ MyQueue.prototype.pop = function() {
 	}
 	return this.outbox.pop();
 };
+
+
+// test cases
+var testQueue = new MyQueue();
+testQueue.pop(1);
+testQueue.pop(2);
+testQueue.pop(3);
+testQueue.pop(4);
+testQueue.pop(5);
+console.log(testQueue);
+
+
+
+
