@@ -46,10 +46,13 @@ Stack.prototype.sort = function() {
 };
 
 
-
-
-
-
-
-
-
+// test cases
+var testStack = new Stack();
+testStack.push(1);
+testStack.push(2);
+testStack.push(3);
+testStack.push(4);
+testStack.push(5);
+// expect 5 to be at top of stack
+console.log(testStack);
+testStack.sort();
