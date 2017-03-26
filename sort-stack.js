@@ -31,13 +31,13 @@ Stack.prototype.sort = function() {
 	// create output stack
 	var stackTwo = new Stack();
 
-
+	// first while creates infinite loop but how so?
 	while(this.top) {
 		var placeHolder = this.pop();
 
-		while(stackTwo.top && stackTwo.top.data > placeHolder) {
+		while(stackTwo.top && stackTwo.top.data < placeHolder) {
 			// push the top element in output stack (larger value) into original stack
-			stackOne.push(stackTwo.pop());
+			this.push(stackTwo.pop());
 		}
 		// push element in placeholder into output stack
 		stackTwo.push(placeHolder);
