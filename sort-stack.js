@@ -32,6 +32,7 @@ Stack.prototype.sort = function() {
 	var stackTwo = new Stack();
 
 	// first while creates infinite loop but how so?
+	// while first stack is not empty
 	while(this.top) {
 		var placeHolder = this.pop();
 
