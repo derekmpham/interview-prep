@@ -20,7 +20,7 @@ Stack.prototype.pop = function() {
 	var top = this.top;
 	if(top) {
 		var popData = top.data;
-		top = top.next;
+		this.top = top.next;
 		return popData;
 	}
 	return;
@@ -31,7 +31,6 @@ Stack.prototype.sort = function() {
 	// create output stack
 	var stackTwo = new Stack();
 
-	// first while creates infinite loop but how so?
 	// while first stack is not empty
 	while(this.top) {
 		var placeHolder = this.pop();
