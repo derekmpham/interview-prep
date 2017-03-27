@@ -19,7 +19,7 @@ Stack.prototype.pop = function() {
 	if(top) {
 		var popData = top.data;
 		// next value becomes new top
-		top = top.next;
+		this.top = top.next;
 		return popData;
 	}
 	return;
