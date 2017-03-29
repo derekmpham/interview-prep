@@ -1,4 +1,5 @@
-function quicksort(arr) {
+// Program to sort an array using recursion
+function quickSort(arr) {
 	if(arr.length == 0) {
 		return [];
 	}
@@ -10,5 +11,9 @@ function quicksort(arr) {
 			right.push(arr[i]);
 		}
 	}
-	return quicksort(left).concat(pivot, quicksort(right));
+	return quickSort(left).concat(pivot, quickSort(right));
 }
+
+// test case
+// expect output to be [1, 2, 3, 4, 5]
+console.log(quickSort([5, 4, 3, 2, 1]));
