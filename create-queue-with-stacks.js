@@ -20,7 +20,7 @@ Stack.prototype.pop = function() {
 	var top = this.top;
 	if(top) {
 		var popData = top.data;
-		top = top.next;
+		this.top = top.next;
 		return popData;
 	}
 	return;
@@ -69,4 +69,5 @@ console.log(testQueue);
 testQueue.dequeue();
 testQueue.dequeue();
 testQueue.dequeue();
+// expect to only have two elements left in outbox stack
 console.log(testQueue);
