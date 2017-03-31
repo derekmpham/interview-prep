@@ -47,35 +47,43 @@ Stack.prototype.sort = function() {
 
 // second solution to sorting stack in ascending order (more efficient solution --> O(n) = nlog(n))
 Stack.prototype.recurSort = function() {
+	// create empty array for temporary storage of elements (purpose: create appropriate data structure to apply quicksort function)
 	var placeHolder = [];
 
+	// push all elements in stack into array
 	while(this.top) {
 		placeHolder.push(this.pop());
 	}
 
+	//quicksort function
 	function quickSort(arr) {
 		if(arr.length == 0) {
 			return [];
 		}
+		// compare first element in array to the rest
 		var left = [], right = [], pivot = arr[0];
 		for(var i = 1; i < arr.length; i++) {
+			// if element being looked at is less than first element, put it in left array--else put it in right array
 			if(arr[i] < pivot) {
 				left.push(arr[i]);
 			} else {
 				right.push(arr[i]);
 			}
 		}
+		// apply recursion
 		return quickSort(left).concat(pivot, quickSort(right));
 	}
+
+	// apply quicksort function on temporary array
 	var sortedArr = quickSort(placeHolder);
 	var stackTwo = new Stack();
 
+	// push all elements of newly sorted array into new stack
 	while(sortedArr[0]) {
 		stackTwo.push(sortedArr.pop());
 	}
 
 	console.log(stackTwo);
-
 }
 
 
