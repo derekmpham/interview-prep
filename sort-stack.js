@@ -26,7 +26,7 @@ Stack.prototype.pop = function() {
 	return;
 };
 
-// sort stack in ascending order (main function in exercise)
+// first solution to sorting stack in ascending order (O(n) = n^2)
 Stack.prototype.sort = function() {
 	// create output stack
 	var stackTwo = new Stack();
@@ -45,8 +45,42 @@ Stack.prototype.sort = function() {
 	console.log(stackTwo);
 };
 
+// second solution to sorting stack in ascending order (more efficient solution --> O(n) = nlog(n))
+Stack.prototype.recurSort = function() {
+	var placeHolder = [];
+
+	while(this.top) {
+		placeHolder.push(this.pop());
+	}
+
+	function quickSort(arr) {
+		if(arr.length == 0) {
+			return [];
+		}
+		var left = [], right = [], pivot = arr[0];
+		for(var i = 1; i < arr.length; i++) {
+			if(arr[i] < pivot) {
+				left.push(arr[i]);
+			} else {
+				right.push(arr[i]);
+			}
+		}
+		return quickSort(left).concat(pivot, quickSort(right));
+	}
+	var sortedArr = quickSort(placeHolder);
+	var stackTwo = new Stack();
+
+	while(sortedArr[0]) {
+		stackTwo.push(sortedArr.pop());
+	}
+
+	console.log(stackTwo);
+
+}
+
 
 // test cases
+// first solution
 var testStack = new Stack();
 testStack.push(1);
 testStack.push(2);
@@ -55,4 +89,17 @@ testStack.push(4);
 testStack.push(5);
 // expect 5 to be at top of stack
 console.log(testStack);
+// now expect 1 to be at top of stack
 testStack.sort();
+
+// second solution using quicksort
+var secondTest = new Stack();
+secondTest.push(6);
+secondTest.push(7);
+secondTest.push(8);
+secondTest.push(9);
+secondTest.push(10);
+// expect 10 to be at top of stack
+console.log(secondTest);
+// now expect 6 to be at top of stack
+secondTest.recurSort();
