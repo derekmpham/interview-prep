@@ -42,18 +42,19 @@ MyQueue.prototype.enqueue = function(obj) {
 
 // pop object from queue (dequeue) and return it
 MyQueue.prototype.dequeue = function() {
-	// if second stack is empty, make sure fill up second stack before popping (objective: reverse order in first stack)
-	if(!this.outbox.length) {
-		// if first stack is empty
-		if(!this.inbox.length) {
-			return undefined;
-		}
-		// while first stack is not empty
-		while(this.inbox.length) {
-			this.outbox.push(this.inbox.pop());
-		}
+	var inboxStack = this.inbox;
+	var outboxStack = this.outbox;
+
+	// while first stack is not empty, make sure fill up second stack before popping (objective: reverse order in first stack)
+	while(inboxStack.top) {
+		outboxStack.push(inboxStack.pop());
 	}
-	return this.outbox.pop();
+
+	// if second stack is not empty, return first element in second stack
+	if(outboxStack.top) {
+		var deq = outboxStack.pop();
+		return deq;
+	}
 };
 
 
@@ -69,5 +70,5 @@ console.log(testQueue);
 testQueue.dequeue();
 testQueue.dequeue();
 testQueue.dequeue();
-// expect to only have two elements left in outbox stack
+// expect only the two elements pushed in last to be left in outbox stack
 console.log(testQueue);
