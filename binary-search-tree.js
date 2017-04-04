@@ -11,3 +11,33 @@ function Node(val) {
 function BinarySearchTree() {
 	this.root = null;
 }
+
+BinarySearchTree.prototype.push = function(val){
+	var rootNode = this.root;
+
+	if(!rootNode){
+		this.root = new Node(val);
+		return;
+	}
+
+	var currentNode = rootNode;
+	var newNode = new Node(val);
+
+	while(currentNode){
+		if(val < currentNode.value){
+			if(!currentNode.left){
+				currentNode.left = newNode;
+				break;
+			} else {
+				currentNode = currentNode.left;
+			}
+		} else {
+			if(!currentNode.right) {
+				currentNode.right = newNode;
+				break;
+			} else {
+				currentNode = currentNode.right;
+			}
+		}
+	}
+}
