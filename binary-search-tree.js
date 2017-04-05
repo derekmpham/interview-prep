@@ -23,22 +23,29 @@ BinarySearchTree.prototype.push = function(val){
 		return;
 	}
 
+	// currentNode refers to node being used to compare with value being pushed
 	var currentNode = rootNode;
 	var newNode = new Node(val);
 
+
 	while(currentNode){
+		// if pushed value less than value of currentNode
 		if(val < currentNode.value){
+			// if currentNode doesn't have a left child, make pushed value left child of currentNode
 			if(!currentNode.left){
 				currentNode.left = newNode;
 				break;
 			} else {
+				// move on to currentNode's left child as focus node to compare with value being pushed
 				currentNode = currentNode.left;
 			}
 		} else {
+			// if currentNode doesn't have a right child, make pushed value right child of currentNode
 			if(!currentNode.right) {
 				currentNode.right = newNode;
 				break;
 			} else {
+				// move on to currentNode's right child as focus node to compare with value being pushed
 				currentNode = currentNode.right;
 			}
 		}
@@ -54,10 +61,3 @@ testTree.push(7);
 testTree.push(3);
 // expect 4 to be root node, 2 to be left child and 9 to be right child of 4, 7 to be left child of 9, and 3 to be right child of 2
 console.log(testTree);
-
-
-
-
-
-
-
