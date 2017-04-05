@@ -12,9 +12,11 @@ function BinarySearchTree() {
 	this.root = null;
 }
 
+// function for inserting value into appropriate location in tree
 BinarySearchTree.prototype.push = function(val){
 	var rootNode = this.root;
 
+	// if there is no root node
 	if(!rootNode){
 		this.root = new Node(val);
 		return;
@@ -41,3 +43,20 @@ BinarySearchTree.prototype.push = function(val){
 		}
 	}
 }
+
+// test case
+var testTree = new BinarySearchTree();
+testTree.push(4);
+testTree.push(9);
+testTree.push(2);
+testTree.push(7);
+testTree.push(3);
+// expect 4 to be root node, 2 to be left child and 9 to be right child of 4, 7 to be left child of 9, and 3 to be right child of 2
+console.log(testTree);
+
+
+
+
+
+
+
