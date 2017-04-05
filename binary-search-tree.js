@@ -18,6 +18,7 @@ BinarySearchTree.prototype.push = function(val){
 
 	// if there is no root node
 	if(!rootNode){
+		// make pushed value root node
 		this.root = new Node(val);
 		return;
 	}
