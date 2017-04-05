@@ -29,8 +29,8 @@ BinarySearchTree.prototype.push = function(val){
 
 
 	while(currentNode){
-		// if pushed value less than value of currentNode
-		if(val < currentNode.value){
+		// if pushed value less than or equal to value of currentNode
+		if(val <= currentNode.value){
 			// if currentNode doesn't have a left child, make pushed value left child of currentNode
 			if(!currentNode.left){
 				currentNode.left = newNode;
@@ -39,7 +39,9 @@ BinarySearchTree.prototype.push = function(val){
 				// move on to currentNode's left child as focus node to compare with value being pushed
 				currentNode = currentNode.left;
 			}
-		} else {
+		}
+		// if pushed value greater than value of currentNode
+		else {
 			// if currentNode doesn't have a right child, make pushed value right child of currentNode
 			if(!currentNode.right) {
 				currentNode.right = newNode;
@@ -58,6 +60,6 @@ testTree.push(4);
 testTree.push(9);
 testTree.push(2);
 testTree.push(7);
-testTree.push(3);
+testTree.push(4);
 // expect 4 to be root node, 2 to be left child and 9 to be right child of 4, 7 to be left child of 9, and 3 to be right child of 2
 console.log(testTree);
