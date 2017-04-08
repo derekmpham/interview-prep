@@ -25,11 +25,7 @@ For example, you can create an object using a constructor function, and then cre
 <strong>What's the difference between an "attribute" and a "property"?</strong>
 <br>
 <br>
-In short, attributes are defined by HTML, while properties are defined by the DOM. Attributes carry additional information about an HTML element and come in "name='value'" pairs. For instance, "<div class='first'></div>" has a "div" tag and a "class" attribute with "first" as a value.
-
-Property is a representation of an attribute in the HTML DOM tree. 
-
-
-
-
-
+In short, attributes are in your HTML file, while properties are in the DOM tree. This means that attributes do not change and always carry initial default values, but HTML properties can--for example, an HTML property value can change when a checks a checkbox.
+<br>
+<br>
+Attributes carry additional information about an HTML element and come in "name='value'" pairs. For instance, a "div" tag can have a "class" attribute with "first" as a value. On the other hand, property is a representation of an attribute in the DOM tree. So that same "div" tag would have a property "className" with a value of "first".
