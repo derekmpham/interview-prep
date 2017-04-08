@@ -19,3 +19,17 @@ Prototypical inheritance is how you implement object orientation in JavaScript--
 <br>
 <br>
 For example, you can create an object using a constructor function, and then create another object variable defined as a new instance of the first object. You can also add new functions or characteristics to the first object through what's called the "prototype property", allowing these newly added functions or characteristics to be "passed on" to the second object.
+<br>
+<br>
+<br>
+<strong>What's the difference between an "attribute" and a "property"?</strong>
+<br>
+<br>
+In short, attributes are defined by HTML, while properties are defined by the DOM. Attributes carry additional information about an HTML element and come in "name='value'" pairs. For instance, "<div class='first'></div>" has a "div" tag and a "class" attribute with "first" as a value.
+
+Property is a representation of an attribute in the HTML DOM tree. 
+
+
+
+
+
