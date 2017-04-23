@@ -6,9 +6,17 @@ Polymorphism is the ability of a function to handle different types of objects. 
 
 <br>
 
-<strong>What is separation of concerns?</strong>
+<strong>What is <i>separation of concerns</i>?</strong>
 
 Separation of concerns is a design principle where each section of a program addresses a specific feature with as little overlap in functionality as possible.
+
+<br>
+
+<strong>What are the drawbacks of not using <i>separation of concerns</i>?</strong>
+
+There are four main drawbacks of not using separation of concerns. First, adding new features would take an order of magnitude longer. Second, it's impossible to optimize. Third, it's extremely difficult to test when we're not using separation of concerns. And finally, fixing and debugging can be a nightmare--fixing something in one place can lead to something else breaking that seems completely unrelated.
+
+<br>
 
 <strong>What is the single responsibility principle?</strong>
 
