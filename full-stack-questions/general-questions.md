@@ -8,6 +8,4 @@ Polymorphism is the ability of a function to handle different types of objects. 
 
 <strong>What is the single responsibility principle?</strong>
 
-<br>
-
 The single responsibility principle is a rule where each class should have only one task or responsibility. If a class is performing more than one task, it leads to confusion.
