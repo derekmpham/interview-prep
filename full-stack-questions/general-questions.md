@@ -21,3 +21,13 @@ There are four main drawbacks of not using separation of concerns. First, adding
 <strong>What is the single responsibility principle?</strong>
 
 The single responsibility principle is a rule where each class should have only one task or responsibility. If a class is performing more than one task, it leads to confusion.
+
+<br>
+
+<strong>What is REST?</strong>
+
+REST (Representational state transfer) is the underlying principle of how computers interact with each other through the web.
+
+<br>
+
+We apply this principle on the web through HTTP requests and responses. The client computer (the browser) does not need to know anything beforehand about the other computer (the server) and the resources it hosts--the browser sends a request (i.e. GET, POST, PUT, DELETE) for some file. The server then responds by sending back the file--or in other words, the server has to provide whatever information the client needs.
