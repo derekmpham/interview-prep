@@ -29,3 +29,10 @@ In short, attributes are in your HTML file, while properties are in the DOM tree
 <br>
 <br>
 Attributes carry additional information about an HTML element and come in "name='value'" pairs. For instance, a "div" tag can have a "class" attribute with "first" as a value. On the other hand, property is a representation of an attribute in the DOM tree. So that same "div" tag would have a property "className" with a value of "first".
+<br>
+<br>
+<br>
+<strong>Can you name two programming paradigms important for JavaScript developers?</strong>
+<br>
+<br>
+(1) Object-Oriented Programming through prototypical inheritance, and (2) Functional Programming through things like first class functions.
