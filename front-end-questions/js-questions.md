@@ -5,6 +5,16 @@
 Event delegation is when you add a common event to multiple elements--including ones we may add in the future--by adding a single event listener to an ancestor element of these elements. This makes it easier for us, since we don't have to add the same event listener to every single element we want to add a common event to.
 
 <br>
+<strong>What's the difference between an "attribute" and a "property"?</strong>
+<br>
+<br>
+In short, attributes are in your HTML file, while properties are in the DOM tree. This means that attributes do not change and always carry initial default values, but HTML properties can--for example, an HTML property value can change when a checks a checkbox.
+<br>
+<br>
+Attributes carry additional information about an HTML element and come in "name='value'" pairs. For instance, a "div" tag can have a "class" attribute with "first" as a value. On the other hand, property is a representation of an attribute in the DOM tree. So that same "div" tag would have a property "className" with a value of "first".
+<br>
+<br>
+<br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
 <br>
@@ -22,13 +32,10 @@ For example, you can create an object using a constructor function, and then cre
 <br>
 <br>
 <br>
-<strong>What's the difference between an "attribute" and a "property"?</strong>
+<strong>When is classical inheritance an appropriate choice?</strong>
 <br>
 <br>
-In short, attributes are in your HTML file, while properties are in the DOM tree. This means that attributes do not change and always carry initial default values, but HTML properties can--for example, an HTML property value can change when a checks a checkbox.
-<br>
-<br>
-Attributes carry additional information about an HTML element and come in "name='value'" pairs. For instance, a "div" tag can have a "class" attribute with "first" as a value. On the other hand, property is a representation of an attribute in the DOM tree. So that same "div" tag would have a property "className" with a value of "first".
+Never, in JavaScript we favor object composition over classical inheritance.
 <br>
 <br>
 <br>
