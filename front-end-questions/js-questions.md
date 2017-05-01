@@ -36,3 +36,16 @@ Attributes carry additional information about an HTML element and come in "name=
 <br>
 <br>
 (1) Object-Oriented Programming through prototypical inheritance, and (2) Functional Programming through things like first class functions.
+<br>
+<br>
+<br>
+<strong>What is functional programming?</strong>
+<br>
+<br>
+Functional programming produces programs by composing mathematical functions and avoids shared state and mutable data. Functional programming only allows pure functions (same inputs will always return same output, produce no side effects, and rely on no external mutable state).
+<br>
+<br>
+Function composition is a big part of functional programming. Function composition is the process of combining two or more functions to produce a new function. It's like snapping together a series of pipes for our data to flow through.
+<br>
+<br>
+First class functions, higher order functions, and functions as arguments all support functional programming.
