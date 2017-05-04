@@ -112,3 +112,25 @@ LinkedList.prototype.add = function(val) {
 
 	return node;
 };
+
+// search nodes at specific positions in linked list
+LinkedList.prototype.searchNodeAt = function(position) {
+	var currentNode = this.head,
+		length = this._length,
+		count = 1,
+		message = {failure: 'Failure: non-existent node in this list'};
+
+		// first case: invalid position
+		if (length === 0 || position < 1 || position > length) {
+			throw new Error(message.failure);
+		}
+
+		// second case: valid position
+		while (count < position) {
+			// go through entire linked list until currentNode is equal to position
+			currentNode = currentNode.next;
+			count++;
+		}
+
+		return currentNode; // here currentNode is equal to position
+};
