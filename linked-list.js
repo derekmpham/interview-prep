@@ -75,3 +75,15 @@ console.log(listOne);
 // delete node in middle of linked list
 listOne.deleteNode(3);
 console.log(listOne);
+
+
+// define constructor
+function Node(data) {
+	this.data = data;
+	this.next = null;
+}
+
+function LinkedList() {
+	this._length = 0; // assign number of nodes in linked list
+	this.head = null; // points to head of linked list (node at front of linked list)
+}
