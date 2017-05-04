@@ -35,3 +35,9 @@ This principle is applied through HTTP requests and responses. The client comput
 <strong>What is an idempotent operation?</strong>
 
 It's an operation that produces the same result no matter how manytimes it's repeated--PUT and DELETE methods are considered to be idempotent.
+
+<br>
+
+<strong>What is a nullipotent operation?</strong>
+
+It's an call that produces no side effects--GET methods are considered to be "safe" or nullipotent.
