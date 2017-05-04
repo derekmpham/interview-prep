@@ -134,3 +134,43 @@ LinkedList.prototype.searchNodeAt = function(position) {
 
 		return currentNode; // here currentNode is equal to position
 };
+
+// remove node from linked list
+LinkedList.prototype.remove = function(position) {
+	var currentNode = this.head,
+		length = this.length,
+		count = 0,
+		message = {failure: 'Failure: non-existent node in this list'},
+		beforeNodeToDelete = null,
+		nodeToDelete = null,
+		deleteNode = null;
+
+	// first case: invalid position
+	if (position < 0 || position > length) {
+		throw new Error(message.failure);
+	}
+
+	// second case: first node is removed
+	if (position === 1) {
+		this.head = currentNode.next; // head reassigned
+		deleteNode = currentNode;
+		currentNode = null;
+		this._length--;
+
+		return deleteNode;
+	}
+
+	// third case: any other node is removed
+	while (count < position) { // loop until we reach node at position we want to remove
+		beforeNodeToDelete = currentNode;
+		nodeToDelete = currentNode.next;
+		count++;
+	}
+
+	beforeNodeToDelete.next = nodeToDelete.next;
+	deleteNode = nodeToDelete;
+	nodeToDelete = null;
+	this._length--;
+
+	return deleteNode;
+};
