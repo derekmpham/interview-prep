@@ -1,128 +1,101 @@
 "use strict";
 
-// Program to remove duplicates from unsorted linked list
+// LINKED LIST
 
-// create linked list class
-class LinkedList {
-	constructor() {
-		this.head = null;
-	}
-
-	// add node to linked list function
-	addNodeToTail(val) {
-		var node = {
-			data: val,
-			next: null
-		};
-
-		if (!this.head) {
-			this.head = node;
-		} else {
-			var p1 = this.head;
-			while (p1.next) {
-				p1 = p1.next;
-			}
-			p1.next = node;
-		}
-	}
-
-	// remove node from linked list function
-	deleteNode(val) {
-		if (!this.head) {
-			console.log("Linked list is empty");
-			return;
-		}
-
-		if (this.head.data === val) {
-			this.head = this.head.next;
-		} else {
-			var p1 = this.head;
-			var p2 = p1.next;
-			while (p2) {
-				if (p2.data === val) {
-					p1.next = p2.next;
-					break;
-				} else {
-					p1 = p2;
-				}
-				p2 = p2.next;
-			}
-		}
-	}
+// define constructor
+function Node(data) {
+	this.data = data;
+	this.next = null;
 }
 
+function LinkedList() {
+	this._length = 0; // assign number of nodes in linked list
+	this.head = null; // points to head of linked list (node at front of linked list)
+}
 
-// remove duplicates from linked list function
-LinkedList.prototype.removeDuplicates = function() {
-	// if linked list is empty or only has one single node
-	if (!this.head || !this.head.next) {
-		console.log("No duplicates were found: empty or single node in linked list");
-		return;
+// add node to linked list
+LinkedList.prototype.add = function(val) {
+	var node = new Node(val), // create new instance of node
+		currentNode = this.head;
+
+	// first case: if linked list is initially empty
+	if (!currentNode) {
+		this.head = node; // make new node head of linked list
+		this._length++;
+
+		return node;
 	}
 
-	var p1;
-	var p2;
-	var p3;
-	var val;
-	p2 = this.head;
-	while (p2) {
-		val = p2.data;
-		p1 = p2;
-		p3 = p1.next;
-		while (p3) {
-			if (p3.data === val) {
-				p1.next = p3.next;
-			} else {
-				p1 = p3;
-			}
-			p3 = p3.next;
-		}
-		p2 = p2.next;
+	// second case: if list linked is initially not empty
+	while (currentNode.next) {
+		currentNode = currentNode.next; // iterate through entire non-empty linked list to get to end of linked list
 	}
+
+	currentNode.next = node; // add new node to end of linked list
+
+	this._length++;
+
+	return node;
 };
 
-// test cases
-// test case for no duplicates (base case)
-var firstList = new LinkedList();
-firstList.addNodeToTail(8);
-// expect "No duplicates were found: empty or single node in linked list"
-firstList.removeDuplicates();
-console.log(firstList);
+// search nodes at specific positions in linked list
+LinkedList.prototype.searchNodeAt = function(position) {
+	var currentNode = this.head,
+		length = this._length,
+		count = 1,
+		message = {failure: 'Failure: non-existent node in this list'};
 
-// test case for two nodes with duplicates
-var secondList = new LinkedList();
-secondList.addNodeToTail(8);
-secondList.addNodeToTail(8);
-secondList.removeDuplicates();
-// expect to have only one node left
-console.log(secondList);
+		// first case: invalid position
+		if (length === 0 || position < 1 || position > length) {
+			throw new Error(message.failure);
+		}
 
-// test case for two nodes without duplicates
-var thirdList = new LinkedList();
-thirdList.addNodeToTail(8);
-thirdList.addNodeToTail(9);
-thirdList.removeDuplicates();
-// expect to still have two nodes
-console.log(thirdList);
+		// second case: valid position
+		while (count < position) {
+			// go through entire linked list until currentNode is equal to position
+			currentNode = currentNode.next;
+			count++;
+		}
 
-// test case for removing duplicates at end of linked list
-var fourthList = new LinkedList();
-fourthList.addNodeToTail(1);
-fourthList.addNodeToTail(2);
-fourthList.addNodeToTail(3);
-fourthList.addNodeToTail(4);
-fourthList.addNodeToTail(1);
-fourthList.removeDuplicates();
-// expect to have only four nodes left
-console.log(fourthList);
+		return currentNode; // here currentNode is equal to position
+};
 
-// test case for removing multiple duplicates from middle of linked list
-var fifthList = new LinkedList();
-fifthList.addNodeToTail(1);
-fifthList.addNodeToTail(2);
-fifthList.addNodeToTail(1);
-fifthList.addNodeToTail(1);
-fifthList.addNodeToTail(3);
-fifthList.removeDuplicates();
-// expect to have only three nodes left
-console.log(fifthList);
+// remove node from linked list
+LinkedList.prototype.remove = function(position) {
+	var currentNode = this.head,
+		length = this.length,
+		count = 0,
+		message = {failure: 'Failure: non-existent node in this list'},
+		beforeNodeToDelete = null,
+		nodeToDelete = null,
+		deletedNode = null;
+
+	// first case: invalid position
+	if (position < 0 || position > length) {
+		throw new Error(message.failure);
+	}
+
+	// second case: first node is removed
+	if (position === 1) {
+		this.head = currentNode.next; // head reassigned
+		deletedNode = currentNode;
+		currentNode = null;
+		this._length--;
+
+		return deletedNode;
+	}
+
+	// third case: any other node is removed
+	while (count < position) { // loop until we reach node at position we want to remove
+		beforeNodeToDelete = currentNode;
+		nodeToDelete = currentNode.next;
+		count++;
+	}
+
+	beforeNodeToDelete.next = nodeToDelete.next;
+	deletedNode = nodeToDelete;
+	nodeToDelete = null;
+	this._length--;
+
+	return deletedNode;
+};
