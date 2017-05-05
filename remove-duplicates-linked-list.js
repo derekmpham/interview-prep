@@ -99,3 +99,35 @@ LinkedList.prototype.remove = function(position) {
 
 	return deletedNode;
 };
+
+// remove duplicates from linked list
+LinkedList.prototype.removeDuplicates = function() {
+	var currentNode = this.head,
+		nextNode = currentNode.next,
+		nodes = {},
+		message = {failure: 'Failure: empty or single node linked list'};
+
+	// first case: empty or only one node in linked list
+	if (!currentNode || !nextNode) {
+		throw new Error(message.failure);
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
