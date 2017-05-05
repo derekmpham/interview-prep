@@ -108,20 +108,16 @@ DoublyLinkedList.prototype.remove = function(position) {
 	return message.success;
 };
 
+// test cases
+var test = new DoublyLinkedList();
+test.add(6);
+test.add(7);
+test.add(8);
+test.add(9);
+test.add(10);
+console.log(test); // expect linked list with five nodes
 
+test.searchNodeAt(5); // expect node with value 10 to be returned
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+test.remove(5); // remove node at position 5
+test.searchNodeAt(5); // expect error message after removing node
