@@ -68,7 +68,7 @@ LinkedList.prototype.remove = function(position) {
 		message = {failure: 'Failure: non-existent node in this list'},
 		beforeNodeToDelete = null,
 		nodeToDelete = null,
-		deleteNode = null;
+		deletedNode = null;
 
 	// first case: invalid position
 	if (position < 0 || position > length) {
@@ -78,11 +78,11 @@ LinkedList.prototype.remove = function(position) {
 	// second case: first node is removed
 	if (position === 1) {
 		this.head = currentNode.next; // head reassigned
-		deleteNode = currentNode;
+		deletedNode = currentNode;
 		currentNode = null;
 		this._length--;
 
-		return deleteNode;
+		return deletedNode;
 	}
 
 	// third case: any other node is removed
@@ -93,11 +93,11 @@ LinkedList.prototype.remove = function(position) {
 	}
 
 	beforeNodeToDelete.next = nodeToDelete.next;
-	deleteNode = nodeToDelete;
+	deletedNode = nodeToDelete;
 	nodeToDelete = null;
 	this._length--;
 
-	return deleteNode;
+	return deletedNode;
 };
 
 // test cases
