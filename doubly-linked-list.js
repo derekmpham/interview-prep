@@ -32,3 +32,45 @@ DoublyLinkedList.prototype.add = function(val) {
 
 	return node;
 }
+
+// search nodes at specific positions in doubly linked list
+DoublyLinkedList.prototype.searchNodeAt = function(position) {
+	var currentNode = this.head,
+		length = this._length,
+		count = 1,
+		message = {failure: 'Failure: non-existent node in this list'};
+
+	// first case: invalid position
+	if (length === 0 || position < 1 || position > length) {
+		throw new Error(message.failure);
+	}
+
+	// second case: valid position
+	while (count < position) {
+		// go through entire doubly linked list until currentNode is equal to position
+		currentNode = currentNode.next;
+		count++;
+	}
+
+	return currentNode;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
