@@ -138,3 +138,14 @@ LinkedList.prototype.reverse = function() {
 
 	return reversedLinkedList;
 }
+
+// test cases
+var test = new LinkedList();
+test.add(6);
+test.add(7);
+test.add(8);
+test.add(9);
+test.add(10);
+console.log(test); // expect linked list with five nodes
+
+test.reverse(); // expect linked list with value 10 as head
