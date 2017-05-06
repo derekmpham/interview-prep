@@ -104,7 +104,7 @@ LinkedList.prototype.remove = function(position) {
 LinkedList.prototype.removeDuplicates = function() {
 	var currentNode = this.head,
 		nextNode = currentNode.next,
-		nodes = {},
+		nodes = {}, // placeholder hash used to hold all nodes (purpose: reference to check for duplicates)
 		message = {failure: 'Failure: empty or single node linked list'};
 
 	// first case: empty or only one node in linked list
@@ -112,22 +112,17 @@ LinkedList.prototype.removeDuplicates = function() {
 		throw new Error(message.failure);
 	}
 
-	
+	nodes[currentNode.data] = true;
+
+	while (nextNode) { // go through entire linked list
+		var data = nextNode.data;
+		if (nodes[data]) { // if duplicate found in linked list
+			currentNode.next = nextNode.next; // remove duplicate node
+		} else {
+			nodes[data] = true;
+			currentNode = nextNode;
+		}
+		nextNode = nextNode.next;
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
