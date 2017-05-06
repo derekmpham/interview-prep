@@ -124,5 +124,37 @@ LinkedList.prototype.removeDuplicates = function() {
 		}
 		nextNode = nextNode.next;
 	}
-
 }
+
+// test cases
+var testOne = new LinkedList();
+testOne.add(6);
+testOne.add(7);
+testOne.add(8);
+testOne.add(9);
+testOne.add(10);
+testOne.removeDuplicates();
+console.log(testOne); // expect no node to be removed
+
+var testTwo = new LinkedList();
+testTwo.add(6);
+testTwo.add(7);
+testTwo.add(8);
+testTwo.add(9);
+testTwo.add(8);
+testTwo.removeDuplicates();
+console.log(testTwo); // expect last node to be removed
+
+var testThree = new LinkedList();
+testThree.add(6);
+testThree.add(7);
+testThree.add(8);
+testThree.add(8);
+testThree.add(9);
+testThree.add(10);
+testThree.removeDuplicates();
+console.log(testThree); // expect fourth node to be removed
+
+var testFour = new LinkedList();
+testFour.add(8);
+testFour.removeDuplicates(); // expect error message
