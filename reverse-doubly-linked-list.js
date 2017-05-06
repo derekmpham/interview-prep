@@ -110,16 +110,21 @@ DoublyLinkedList.prototype.remove = function(position) {
 	return message.success;
 };
 
-// test cases
-var test = new DoublyLinkedList();
-test.add(6);
-test.add(7);
-test.add(8);
-test.add(9);
-test.add(10);
-console.log(test); // expect linked list with five nodes
+// reverse doubly linked list
+DoublyLinkedList.prototype.reverse = function() {
+	var currentNode = this.head,
+		nextNode;
 
-test.searchNodeAt(5); // expect node with value 10 to be returned
+	// iterate through entire doubly linked list
+	while (currentNode) {
+		nextNode = currentNode.next;
+		currentNode.next = currentNode.previous; // place node after currentNode before currentNode
+		currentNode.previous = nextNode; // place node before currentNode after currentNode
 
-test.remove(5); // remove node at position 5
-test.searchNodeAt(5); // expect error message after removing node
+		if (!nextNode) { // when we get to the tail of doubly linked list
+			this.head = currentNode; // make tail head of doubly linked list
+		}
+		currentNode = nextNode; // move on to the next node
+	}
+	return this;
+}
