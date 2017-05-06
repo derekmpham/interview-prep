@@ -128,3 +128,15 @@ DoublyLinkedList.prototype.reverse = function() {
 	}
 	return this;
 }
+
+
+// test cases
+var test = new DoublyLinkedList();
+test.add(6);
+test.add(7);
+test.add(8);
+test.add(9);
+test.add(10);
+console.log(test); // expect linked list with five nodes and head node of value 6
+
+test.reverse(); // expect linked list with head node of value 10
