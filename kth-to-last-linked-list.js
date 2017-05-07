@@ -109,25 +109,11 @@ LinkedList.prototype.kthToLast = function(k) {
 		kthNode,
 		message = {failure: 'Failure: non-existent node in this list'};
 
-	// first case: if k is 0 or negative value
-	if (k <= 0) {
-		return;
+	// first case: if k is less than 0 or greater than length of linked list
+	if (k <= 0 || k > this._length) {
+		throw new Error(message.failure);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
