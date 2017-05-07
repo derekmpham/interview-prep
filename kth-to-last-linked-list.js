@@ -113,6 +113,19 @@ LinkedList.prototype.kthToLast = function(k) {
 	if (k <= 0 || k > this._length) {
 		throw new Error(message.failure);
 	}
+
+	// second case: if k is any other value
+	while (node) {
+		if (i == k) {
+			kthNode = this.head;
+		} else if (i-k > 0) {
+			kthNode = kthNode.next;
+		}
+		i++;
+
+		node = node.next;
+	}
+	return kthNode;
 }
 
 
