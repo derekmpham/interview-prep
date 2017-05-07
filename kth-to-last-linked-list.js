@@ -101,3 +101,33 @@ LinkedList.prototype.remove = function(position) {
 
 	return deletedNode;
 };
+
+// return kth to last
+LinkedList.prototype.kthToLast = function(k) {
+	var node = this.head,
+		i = 1,
+		kthNode,
+		message = {failure: 'Failure: non-existent node in this list'};
+
+	// first case: if k is 0 or negative value
+	if (k <= 0) {
+		return;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
