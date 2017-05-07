@@ -115,18 +115,33 @@ LinkedList.prototype.kthToLast = function(k) {
 	}
 
 	// second case: if k is any other value
-	while (node) {
+	while (node) { // go through linked list to find where k is
 		if (i == k) {
-			kthNode = this.head;
+			kthNode = this.head; // cuts linked list making from kth node become head node (becomes solution)
 		} else if (i-k > 0) {
 			kthNode = kthNode.next;
 		}
 		i++;
 
-		node = node.next;
+		node = node.next; // move on search
 	}
+
 	return kthNode;
 }
 
 
+// test cases
+var test = new LinkedList();
+test.add(6);
+test.add(7);
+test.add(8);
+test.add(9);
+test.add(10);
+console.log(test); // expect linked list with five nodes
 
+test.kthToLast(-1); // expect error message
+test.kthToLast(0); // expect error message
+test.kthToLast(8); // expect error message
+test.kthToLast(1); // expect node with value 10 to be returned
+test.kthToLast(3); // expect node with value 8 to be returned
+test.kthToLast(5); // expect node with value 6 to be returned
