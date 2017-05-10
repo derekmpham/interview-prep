@@ -56,3 +56,9 @@ Function composition is a big part of functional programming. Function compositi
 <br>
 <br>
 First class functions, higher order functions, and functions as arguments all support functional programming.
+<br>
+<br>
+<br>
+<strong>What's the difference between == and ===?</strong>
+
+"==" is a type converting equality, meaning that "==" will convert variable to value regardless of data type. So "2"==2 will return true.
