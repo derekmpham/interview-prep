@@ -60,5 +60,9 @@ First class functions, higher order functions, and functions as arguments all su
 <br>
 <br>
 <strong>What's the difference between == and ===?</strong>
-
-"==" is a type converting equality, meaning that "==" will convert variable to value regardless of data type. So "2"==2 will return true.
+<br>
+<br>
+"==" is a type converting equality, meaning that "==" will convert variable to value regardless of data type. So both 2==2 and "2"==2 will return true.
+<br>
+<br>
+However, "===" is a strict equality operator, meaning that "===" will not convert values automatically. So 2===2 will return true, but "2"===2 will return false.
