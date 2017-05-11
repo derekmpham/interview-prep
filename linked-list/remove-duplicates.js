@@ -1,8 +1,8 @@
 "use strict";
 
-// REVERSE LINKED LIST
+// REMOVE DUPLICATES OF SINGLY LINKED LIST
 
-// first create linked list
+// first create singly linked list
 
 // define constructor
 function Node(data) {
@@ -102,50 +102,61 @@ LinkedList.prototype.remove = function(position) {
 	return deletedNode;
 };
 
-// reverse linked list
-LinkedList.prototype.reverse = function() {
-	
-	// if linked list is empty or only has one node
-	if (!this.head || !this.head.next) {
-		return this;
+// remove duplicates from linked list
+LinkedList.prototype.removeDuplicates = function() {
+	var currentNode = this.head,
+		nextNode = currentNode.next,
+		nodes = {}, // placeholder hash used to hold all nodes (purpose: reference to check for duplicates)
+		message = {failure: 'Failure: empty or single node linked list'};
+
+	// first case: empty or only one node in linked list
+	if (!currentNode || !nextNode) {
+		throw new Error(message.failure);
 	}
 
-	var nodes = [],
-		currentNode = this.head;
+	nodes[currentNode.data] = true;
 
-	// store all nodes in array
-	while (currentNode) {
-		nodes.push(currentNode);
-		currentNode = currentNode.next;
+	while (nextNode) { // go through entire linked list
+		var data = nextNode.data;
+		if (nodes[data]) { // if duplicate found in linked list
+			currentNode.next = nextNode.next; // remove duplicate node
+		} else {
+			nodes[data] = true;
+			currentNode = nextNode;
+		}
+		nextNode = nextNode.next;
 	}
-
-	var reversedLinkedList = new LinkedList();
-
-	// make last node in array head of reversed linked list
-	reversedLinkedList.head = nodes.pop();
-	currentNode = reversedLinkedList.head;
-
-	// take out and store newly last node in array inside variable
-	var node = nodes.pop();
-
-	while (node) { // iterate until array is empty
-		node.next = null; // make sure recently popped node is tail
-		currentNode.next = node; // have recently popped node become next node in reversed linked list
-
-		currentNode = currentNode.next; // move on to next node
-		node = nodes.pop(); // again take out and store newly last node in array inside variable
-	}
-
-	return reversedLinkedList;
 }
 
 // test cases
-var test = new LinkedList();
-test.add(6);
-test.add(7);
-test.add(8);
-test.add(9);
-test.add(10);
-console.log(test); // expect linked list with five nodes
+var testOne = new LinkedList();
+testOne.add(6);
+testOne.add(7);
+testOne.add(8);
+testOne.add(9);
+testOne.add(10);
+testOne.removeDuplicates();
+console.log(testOne); // expect no node to be removed
 
-test.reverse(); // expect linked list with value 10 as head
+var testTwo = new LinkedList();
+testTwo.add(6);
+testTwo.add(7);
+testTwo.add(8);
+testTwo.add(9);
+testTwo.add(8);
+testTwo.removeDuplicates();
+console.log(testTwo); // expect last node to be removed
+
+var testThree = new LinkedList();
+testThree.add(6);
+testThree.add(7);
+testThree.add(8);
+testThree.add(8);
+testThree.add(9);
+testThree.add(10);
+testThree.removeDuplicates();
+console.log(testThree); // expect fourth node to be removed
+
+var testFour = new LinkedList();
+testFour.add(8);
+testFour.removeDuplicates(); // expect error message
