@@ -2,8 +2,9 @@
 
 function checkPalindrome(str) {
 
-	// remove all non-alphanumeric characters through regular expression
+	// identify non-alphanumeric characters through regular expression
 	var regEx = /[^A-Za-z0-9]/g;
 
-	
+	// lower case all characters in string and remove all non-alphanumeric characters
+	var lowCaseReg = str.toLowerCase().replace(regEx, '');
 }
