@@ -17,4 +17,10 @@ function largestProduct(unsortedArray) {
 	}
 
 	productTwo = sortedArray[0] * sortedArray[1] * sortedArray[lastElementIndex];
+
+	if (productOne > productTwo) {
+		return productOne;
+	}
+
+	return productTwo;
 }
