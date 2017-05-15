@@ -66,3 +66,13 @@ First class functions, higher order functions, and functions as arguments all su
 <br>
 <br>
 However, "===" is a strict equality operator, meaning that "===" will not convert values automatically. So 2===2 will return true, but "2"===2 will return false.
+<br>
+<br>
+<br>
+<strong>What is the difference between null and undefined?</strong>
+<br>
+<br>
+Null is an assignment value, and can be assigned to a variable as a representation of no value.
+<br>
+<br>
+Undefined represents a variable that has been declared but has not yet been assigned a value.
