@@ -13,3 +13,7 @@ function uniqueElements(arr) {
 	}
 	return unique;
 }
+
+// test case
+var test = [1, 2, 3, 4, 1, 2, 2, 3];
+uniqueElements(test); // expect [1, 2, 3, 4]
