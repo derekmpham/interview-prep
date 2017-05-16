@@ -76,3 +76,10 @@ Null is an assignment value, and can be assigned to a variable as a representati
 <br>
 <br>
 Undefined represents a variable that has been declared but has not yet been assigned a value.
+<br>
+<br>
+<br>
+<strong>What is hoisting?</strong>
+<br>
+<br>
+Hoisting is when you move all declarations to the top of the current scope. So with hoisting, a variable can be used before being declared.
