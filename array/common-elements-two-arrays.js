@@ -13,6 +13,7 @@ function intersection(firstArray, secondArray) {
 	secondArray.forEach(function(element) { // iterate through entire second array
 		if (hashMap[element] === 1) { // if element in second array exists in hashmap
 			commonElements.push(element); // add matching element into output array
+			hashMap[element]++; // implement counter to keep track of what we already added
 		}
 	});
 }
