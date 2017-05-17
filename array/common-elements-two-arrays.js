@@ -5,7 +5,7 @@ function intersection(firstArray, secondArray) {
 	var commonElements = [];
 
 	// create hashmap with elements of first array as keys
-	arrOne.forEach(function(element) {
+	firstArray.forEach(function(element) {
 		hashMap[element] = 1;
 	})
 
@@ -16,6 +16,13 @@ function intersection(firstArray, secondArray) {
 			hashMap[element]++; // implement counter to keep track of what we already added
 		}
 	});
+
+	return commonElements; // return output array
 }
 
+// test case
+var arrOne = [1, 2, 3, 4];
+var arrTwo = [3, 4, 5, 6];
 
+// expect [3, 4] to be returned
+intersection(arrOne, arrTwo);
