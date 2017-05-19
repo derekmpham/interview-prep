@@ -21,3 +21,7 @@ function isAnagram(firstStr, secondStr) {
 var testOne = "army";
 var testTwo = "Mary";
 isAnagram(testOne, testTwo); // expect to return true
+
+var testThree = "mash";
+var testFour = "smash";
+isAnagram(testThree, testFour); // expect to return false
