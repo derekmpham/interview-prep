@@ -41,3 +41,9 @@ It's an operation that produces the same result no matter how manytimes it's rep
 <strong>What is a nullipotent operation?</strong>
 
 It's an call that produces no side effects--GET methods are considered to be "safe" or nullipotent.
+
+<br>
+
+<strong>What is event-driven programming?</strong>
+
+Event-driven programming is a paradigm in which the flow of the program is determined by events such as user actions (i.e. mouse clicks, key presses), sensor outputs, or messages from other programs/threads.
