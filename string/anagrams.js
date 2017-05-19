@@ -8,4 +8,16 @@ function isAnagram(firstStr, secondStr) {
 	// sort strings and join each resulting array to a string
 	a = a.split("").sort().join("");
 	b = b.split("").sort().join("");
+
+	// compare results
+	if (a === b) {
+		return true;
+	} else {
+		return false;
+	}
 }
+
+// test case
+var testOne = "army";
+var testTwo = "Mary";
+isAnagram(testOne, testTwo); // expect to return true
