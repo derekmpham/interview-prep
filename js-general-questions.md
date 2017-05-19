@@ -55,7 +55,14 @@ Functional programming produces programs by composing mathematical functions and
 Function composition is a big part of functional programming. Function composition is the process of combining two or more functions to produce a new function. It's like snapping together a series of pipes for our data to flow through.
 <br>
 <br>
-First class functions, higher order functions, and functions as arguments all support functional programming.
+First class functions, higher-order functions, and functions as arguments all support functional programming.
+<br>
+<br>
+<br>
+<strong>What are higher-order functions?</strong>
+<br>
+<br>
+Functions that can take other functions as arguments.
 <br>
 <br>
 <br>
