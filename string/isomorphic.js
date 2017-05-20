@@ -16,9 +16,10 @@ function isIsomorphic(stringOne, stringTwo) {
 		// if the letter does not exist, create a map and map it to the value of the second letter
 		if (letterMap[letterA] === undefined) {
 			letterMap[letterA] = letterB;
+		} else if (letterMap[letterA] !== letterB) { // if letterA already exists in the map, but does not map to letterB, that means that A is mapping to more than one letter
+			return false;
 		}
 	}
-
 
 }
 
