@@ -25,16 +25,7 @@ function isIsomorphic(stringOne, stringTwo) {
 	return true;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// test cases
+isIsomorphic("see", "add"); // expect to return true
+isIsomorphic("pick", "note"); // expect to return true
+isIsomorphic("test", "pick"); // expect to return false
