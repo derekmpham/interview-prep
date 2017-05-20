@@ -21,6 +21,8 @@ function isIsomorphic(stringOne, stringTwo) {
 		}
 	}
 
+	// if after iterating through and conditions are satisfied, return true
+	return true;
 }
 
 
