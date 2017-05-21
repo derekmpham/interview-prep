@@ -90,3 +90,10 @@ Undefined represents a variable that has been declared but has not yet been assi
 <br>
 <br>
 Hoisting is when you move all declarations to the top of the current scope. So with hoisting, a variable can be used before being declared.
+<br>
+<br>
+<br>
+<strong>What is "use strict"?</strong>
+<br>
+<br>
+"use strict" tells JavaScript to execute in 'strict mode', which prevents developers from using undeclared variables.
