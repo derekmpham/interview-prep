@@ -97,3 +97,10 @@ Hoisting is when you move all declarations to the top of the current scope. So w
 <br>
 <br>
 "use strict" tells JavaScript to execute in 'strict mode', which prevents developers from using undeclared variables.
+<br>
+<br>
+<br>
+<strong>Explain event bubbling and how to prevent it</strong>
+<br>
+<br>
+Event bubbling is when an event triggers at the deepest possible element, and triggers on parent elements in nesting order. As a result, when you click on a child element, the event bubbles up from parent to parent until it is handled, or until it reaches the document object.
