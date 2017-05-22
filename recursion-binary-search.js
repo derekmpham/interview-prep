@@ -7,4 +7,6 @@ function binarySearch(arr, val, leftPosition, rightPosition) {
 		return -1;
 	}
 
+	var middlePivot = Math.floor((leftPosition + rightPosition) / 2);
+
 }
