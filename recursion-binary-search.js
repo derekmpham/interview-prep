@@ -8,5 +8,8 @@ function binarySearch(arr, val, leftPosition, rightPosition) {
 	}
 
 	var middlePivot = Math.floor((leftPosition + rightPosition) / 2);
+	if (arr[middlePivot] === val) {
+		return middlePivot;
+	}
 
 }
