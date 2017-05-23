@@ -104,3 +104,10 @@ Hoisting is when you move all declarations to the top of the current scope. So w
 <br>
 <br>
 Event bubbling is when an event triggers at the deepest possible element, and triggers on parent elements in nesting order. As a result, when you click on a child element, the event bubbles up from parent to parent until it is handled, or until it reaches the document object.
+<br>
+<br>
+<br>
+<strong>What is 'promise'?</strong>
+<br>
+<br>
+'Promise' is a proxy for a value that's not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason.
