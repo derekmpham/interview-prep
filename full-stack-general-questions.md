@@ -47,3 +47,9 @@ It's an call that produces no side effects--GET methods are considered to be "sa
 <strong>What is event-driven programming?</strong>
 
 Event-driven programming is a paradigm in which the flow of the program is determined by events such as user actions (i.e. mouse clicks, key presses), sensor outputs, or messages from other programs/threads.
+
+<br>
+
+<strong>What is Agile?</strong>
+
+It's a set of software development principles that emphasizes: (1) Individuals and interactions over processes and tools, (2) Working software over comprehensive documentation, (3) Customer collaboration over contract negotiation, and (4) Responding to change over following a plan.
