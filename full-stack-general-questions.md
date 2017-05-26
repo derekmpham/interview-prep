@@ -53,3 +53,11 @@ Event-driven programming is a paradigm in which the flow of the program is deter
 <strong>What is Agile?</strong>
 
 It's a set of software development principles that emphasizes: (1) Individuals and interactions over processes and tools, (2) Working software over comprehensive documentation, (3) Customer collaboration over contract negotiation, and (4) Responding to change over following a plan.
+
+<br>
+
+<strong>What is Ο(n)? Ω(n)? Θ(n)?</strong>
+
+Ο(n), Ω(n), and Θ(n) all refer to the performance or complexity of an algorithm.
+
+Ο(n) describes the worst-case scenario. Ω(n) describes the best-case scenario. And Θ(n) describes the average-case scenario.
