@@ -56,6 +56,18 @@ It's a set of software development principles that emphasizes: (1) Individuals a
 
 <br>
 
+<strong>What is Scrum?</strong>
+
+Scrum is "a lightweight process framework" for agile development. There are three core roles in the Scrum framework: (1) Product owner, (2) Development team, and (3) Scrum master. The process is made up of timeboxed events called "sprints".
+
+The product owner is responsible for "big-picture" goals--they're focused on having a vision for what should be built and on conveying that vision to the entire team. The product owner is more focused on the business/users side than the technical side.
+
+The development team is responsible for delivering "potentially shippable increments" (PSIs) of product at the end of each sprint.
+
+And the scrum master is the team facilitator, similar to a project manager but different in a sense that a scrum master is less focused on people management. The scrum master basically makes sure that the team does not get distracted.
+
+<br>
+
 <strong>What is Ο(n)? Ω(n)? Θ(n)?</strong>
 
 Ο(n), Ω(n), and Θ(n) all refer to the performance or complexity of an algorithm.
