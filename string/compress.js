@@ -13,6 +13,8 @@ function compressStr(str) {
 			maxCount = Math.max(maxCount, currCount); // choose the larger value between maxCount and currCount
 			currChar = str[i]; // move on to the next character
 			currCount = 1; // count resets to 1 since we have moved on to the next character
+		} else { // if there is a match add to the repeated count
+			currCount++;
 		}
 	}
 
