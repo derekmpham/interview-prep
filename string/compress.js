@@ -1,4 +1,4 @@
-// Method that performs basic string compression using the counts of repeated characters
+// Perform basic string compression using the counts of repeated characters
 
 function compressStr(str) {
 	var output = "", // will return this variable as final compressed string
