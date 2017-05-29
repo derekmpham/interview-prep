@@ -6,6 +6,12 @@ Polymorphism is the ability of a function to handle different types of objects. 
 
 <br>
 
+<strong>What's the difference between inheritance and composition?</strong>
+
+Inheritance represents the "is a" relationship between different classes. It allows a class to have the same behavior as another class and extend or tailor that behavior to provide special action for specific needs.
+
+<br>
+
 <strong>What is <i>separation of concerns</i>?</strong>
 
 Separation of concerns is a design principle where each section of a program addresses a specific feature with as little overlap in functionality as possible.
