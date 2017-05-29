@@ -14,6 +14,12 @@ Composition represents the "has a" or "part of" relationship between objects. It
 
 <br>
 
+<strong>Why do you need a web server?</strong>
+
+You need a web server to store web site files and broadcast them over the internet for your site visitors to see.
+
+<br>
+
 <strong>What is <i>separation of concerns</i>?</strong>
 
 Separation of concerns is a design principle where each section of a program addresses a specific feature with as little overlap in functionality as possible.
