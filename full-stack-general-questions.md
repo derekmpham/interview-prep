@@ -10,6 +10,8 @@ Polymorphism is the ability of a function to handle different types of objects. 
 
 Inheritance represents the "is a" relationship between different classes. It allows a class to have the same behavior as another class and extend or tailor that behavior to provide special action for specific needs.
 
+Composition represents the "has a" or "part of" relationship between objects. It allows you to combine simple objects or data types into more complex ones.
+
 <br>
 
 <strong>What is <i>separation of concerns</i>?</strong>
