@@ -38,6 +38,16 @@ The single responsibility principle is a rule where each class should have only 
 
 <br>
 
+<strong>What are the advantages of using modules?</strong>
+
+(1) Reuse, (2) Decoupling, and (3) Namespace. You can easily reuse code using modules. If certain tasks are sectioned off to certain functions or classes, you can reuse that particular code whenever you need to perform that task again.
+
+You can also decouple code using modules. This allows you to not have a class or object be too dependent on another class or object.
+
+Modules also define a namespace, where you can use your methods and constants without having to worry about being stepped on by other methods and constants.
+
+<br>
+
 <strong>What is REST?</strong>
 
 REST (Representational state transfer) is the underlying principle of how computers interact with each other through the web.
