@@ -7,5 +7,12 @@ function decimalToBinary(num) {
 		} else {
 			return decimalToBinary(num/2) + 0; // recursively return proceeding binary digits
 		}
+	} else {
+		return '';
 	}
 }
+
+// test cases
+decimalToBinary(3); // expect to return "11"
+decimalToBinary(8); // expect to return "1000"
+decimalToBinary(1000) // expect to return "1111101000"
