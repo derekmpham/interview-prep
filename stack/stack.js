@@ -31,7 +31,7 @@ testStack.push(1);
 testStack.push(2);
 testStack.push(3);
 testStack.push(4);
-// expect to print out 4
-console.log(testStack.pop());
-// expect to print out 3
-console.log(testStack.pop());
+// expect to return 4
+testStack.pop();
+// expect to return 3
+testStack.pop();
