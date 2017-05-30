@@ -16,7 +16,7 @@ Composition represents the "has a" or "part of" relationship between objects. It
 
 <strong>What's horizontal scaling? Vertical scaling?</strong>
 
-Horizontal scaling means that you scale your database by adding more machines into your pool of resources.
+Horizontal scaling means that you scale your database by adding more machines into your pool of resources. Vertical scaling means that you scale by adding more power (i.e. CPU, RAM) to an existing machine.
 
 <br>
 
