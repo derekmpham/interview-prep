@@ -16,7 +16,7 @@ function isUnique(str) {
 }
 
 // test case for returning true
-console.log(isUnique("cab"));
+isUnique("tea");
 
 // test case for returning false
-console.log(isUnique("javascript"));
+isUnique("test");
