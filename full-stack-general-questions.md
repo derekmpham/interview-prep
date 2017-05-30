@@ -14,6 +14,12 @@ Composition represents the "has a" or "part of" relationship between objects. It
 
 <br>
 
+<strong>What's horizontal scaling? Vertical scaling?</strong>
+
+Horizontal scaling means that you scale your database by adding more machines into your pool of resources.
+
+<br>
+
 <strong>Why do you need a web server?</strong>
 
 You need a web server to store web site files and broadcast them over the internet for your site visitors to see.
