@@ -19,5 +19,5 @@ function quickSort(arr) {
 }
 
 // test case
-// expect output to be [1, 2, 3, 4, 5]
-console.log(quickSort([5, 4, 3, 2, 1]));
+// expect to return [1, 2, 3, 4, 5]
+quickSort([5, 4, 3, 2, 1]);
