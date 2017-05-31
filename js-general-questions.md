@@ -111,3 +111,10 @@ Event bubbling is when an event triggers at the deepest possible element, and tr
 <br>
 <br>
 'Promise' is a proxy for a value that's not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason.
+<br>
+<br>
+<br>
+<strong>What is jQuery?</strong>
+<br>
+<br>
+It's a JavaScript library that makes it easier to use JavaScript on the front end. You can do things like DOM manipulation and AJAX calls without having to write as many lines of JavaScript.
