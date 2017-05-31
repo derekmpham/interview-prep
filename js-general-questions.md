@@ -118,3 +118,10 @@ Event bubbling is when an event triggers at the deepest possible element, and tr
 <br>
 <br>
 It's a JavaScript library that makes it easier to use JavaScript on the front end. You can do things like DOM manipulation and AJAX calls without having to write as many lines of JavaScript.
+<br>
+<br>
+<br>
+<strong>What is cloud computing?</strong>
+<br>
+<br>
+It's when you use a network of remote servers hosted on the Internet to store, manage, and process data rather than using your own physical servers.
