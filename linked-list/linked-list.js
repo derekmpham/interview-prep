@@ -26,7 +26,7 @@ LinkedList.prototype.add = function(val) {
 		return node;
 	}
 
-	// second case: if list linked is initially not empty
+	// second case: if linked list is initially not empty
 	while (currentNode.next) {
 		currentNode = currentNode.next; // iterate through entire non-empty linked list to get to end of linked list
 	}
