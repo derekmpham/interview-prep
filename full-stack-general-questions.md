@@ -103,3 +103,11 @@ And the scrum master is the team facilitator, similar to a project manager but d
 Ο(n), Ω(n), and Θ(n) all refer to the performance or complexity of an algorithm.
 
 Ο(n) describes the worst-case scenario. Ω(n) describes the best-case scenario. And Θ(n) describes the average-case scenario.
+
+<br>
+
+<strong>Why do some people say "Ruby can't scale"?</strong>
+
+Because Ruby is incapable of handling multiple concurrent threads and does not provide built-in asynchronous input/output (I/O).
+
+So anything that requires long running requests are not suitable for Ruby solutions. That's when you use another language like Node.js instead to add asynchronous I/O.
