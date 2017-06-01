@@ -94,6 +94,21 @@ function findIntersection(headOne, headTwo) {
 		stackTwo.push(headTwo);
 		headTwo = headTwo.next;
 	}
+
+	// if no intersection, return undefined
+	if (stackOne.length === 0 || stackTwo.length ===0) {
+		return undefined;
+	} else if (peekStack(stackOne) !== peekStack(stackTwo)) {
+		return undefined;
+	} else { // if there is an intersection
+		var intersect;
+		while (peekStack(stackOne) === peekStack(stackTwo)) {
+			intersect = peekStack(stackOne);
+			stackOne.pop();
+			stackTwo.pop();
+		}
+		return intersect; // return intersecting node
+	}
 }
 
 
