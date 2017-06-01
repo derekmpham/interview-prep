@@ -77,7 +77,13 @@ LinkedList.prototype.remove = function(position) {
 	return deletedNode;
 }
 
+function peekStack(stack) {
+	return stack[stack.length - 1];
+}
 
+function findIntersection(listOne, listTwo) {
+
+}
 
 
 
