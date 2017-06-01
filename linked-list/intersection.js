@@ -37,7 +37,45 @@ LinkedList.prototype.add = function(val) {
 	return node;
 }
 
+// remove node from linked list
+LinkedList.prototype.remove = function(position) {
+	var currentNode = this.head,
+		length = this.length,
+		count = 0,
+		message = {failure: 'Failure: non-existent node in this list'},
+		beforeNodeToDelete = null,
+		nodeToDelete = null,
+		deletedNode = null;
 
+	// first case: invalid position
+	if (position < 0 || position > length) {
+		throw new Error(message.failure);
+	}
+
+	// second case: first node is removed
+	if (position === 1) {
+		this.head = currentNode.next; // head reassigned
+		deletedNode = currentNode;
+		currentNode = null;
+		this._length--;
+
+		return deletedNode;
+	}
+
+	// third case: any other node is removed
+	while (count < position) { // loop until we reach node at position we want to remove
+		beforeNodeToDelete = currentNode;
+		nodeToDelete = currentNode.next;
+		count++;
+	}
+
+	beforeNodeToDelete.next = nodeToDelete.next;
+	deletedNode = nodeToDelete;
+	nodeToDelete = null;
+	this._length--;
+
+	return deletedNode;
+}
 
 
 
