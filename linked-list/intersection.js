@@ -81,8 +81,19 @@ function peekStack(stack) {
 	return stack[stack.length - 1];
 }
 
-function findIntersection(listOne, listTwo) {
+function findIntersection(headOne, headTwo) {
+	var stackOne = [],
+		stackTwo = [];
 
+	while (headOne !== null) {
+		stackOne.push(headOne);
+		headOne = headOne.next;
+	}
+
+	while (headTwo !== null) {
+		stackTwo.push(headTwo);
+		headTwo = headTwo.next;
+	}
 }
 
 
