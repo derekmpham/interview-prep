@@ -111,3 +111,9 @@ And the scrum master is the team facilitator, similar to a project manager but d
 Because Ruby is incapable of handling multiple concurrent threads and does not provide built-in asynchronous input/output (I/O).
 
 So anything that requires long running requests are not suitable for Ruby solutions. That's when you use another language like Node.js instead to add asynchronous I/O.
+
+<br>
+
+<strong>What is cloud computing?</strong>
+
+It's when you use a network of remote servers hosted on the Internet to store, manage, and process data rather than using your own physical servers.

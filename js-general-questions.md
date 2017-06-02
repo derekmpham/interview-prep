@@ -121,7 +121,13 @@ It's a JavaScript library that makes it easier to use JavaScript on the front en
 <br>
 <br>
 <br>
-<strong>What is cloud computing?</strong>
+<strong>What is NaN? What is its type? How can you reliably test if a value is equal to NaN?</strong>
 <br>
 <br>
-It's when you use a network of remote servers hosted on the Internet to store, manage, and process data rather than using your own physical servers.
+NaN stands for "not a number". It results from operations that cannot be performed, because one of the operands is non-numeric (i.e. "string"/4), or because the result of the operation is non-numeric (i.e. 4/0).
+<br>
+<br>
+Even though NaN means "not a number", its type is Number. Also, when you compare NaN to anything--even itself--is false.
+<br>
+<br>
+One way to test if a value is equal to NaN is do value !== value, which only return true if the value is equal to NaN. You can also use the isNaN() function.
