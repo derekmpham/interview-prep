@@ -81,9 +81,12 @@ function peekStack(stack) {
 	return stack[stack.length - 1];
 }
 
-function findIntersection(headOne, headTwo) {
-	var stackOne = [],
-		stackTwo = [];
+function findIntersection(linkedlistOne, linkedlistTwo) {
+	var headOne = linkedlistOne.head,
+		headTwo = linkedlistTwo.head,
+		stackOne = [],
+		stackTwo = [],
+		intersect;
 
 	while (headOne !== null) {
 		stackOne.push(headOne);
@@ -95,22 +98,38 @@ function findIntersection(headOne, headTwo) {
 		headTwo = headTwo.next;
 	}
 
-	// if no intersection, return undefined
-	if (stackOne.length === 0 || stackTwo.length ===0) {
-		return undefined;
-	} else if (peekStack(stackOne) !== peekStack(stackTwo)) {
-		return undefined;
+	console.log(stackOne);
+	console.log(stackTwo);
+
+	if (stackOne.length === 0 || stackTwo.length ===0) { // if either stack/linked list is empty
+		intersect = undefined;
+	} else if (peekStack(stackOne) !== peekStack(stackTwo)) { // if no intersection
+		intersect = undefined;
+		console.log("ELSE IF STATEMENT");
 	} else { // if there is an intersection
-		var intersect;
 		while (peekStack(stackOne) === peekStack(stackTwo)) {
 			intersect = peekStack(stackOne);
 			stackOne.pop();
 			stackTwo.pop();
 		}
-		return intersect; // return intersecting node
 	}
+	return intersect; // return intersecting node
 }
 
+// test case
+var testOne = new LinkedList(),
+	testTwo = new LinkedList();
+	testNode = new Node(4);
 
+testOne.add(1);
+testOne.add(2);
+testOne.add(3);
+testOne.add(testNode);
 
+testTwo.add(2);
+testTwo.add(3);
+testTwo.add(testNode);
+testTwo.add(5);
+testTwo.add(6);
 
+findIntersection(testOne, testTwo); // expect to return testNode
