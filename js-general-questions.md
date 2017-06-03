@@ -32,6 +32,13 @@ For example, you can create an object using a constructor function, and then cre
 <br>
 <br>
 <br>
+<strong>When is prototypal inheritance an appropriate choice?</strong>
+<br>
+<br>
+When you want to enable composition (i.e. delegation, concatenative, functional). So in situations where modules or functional programming don't provide an obvious solution, when you need to compose objects from multiple sources, and any time you need inheritance.
+<br>
+<br>
+<br>
 <strong>When is classical inheritance an appropriate choice?</strong>
 <br>
 <br>
@@ -72,7 +79,7 @@ Functions that can take other functions as arguments.
 For object-oriented programming, it's easy to understand the basic concept of objects and easy to interpret the meaning of method calls. Object-oriented programming tends to use an imperative style rather than a declarative style, which reads like a straight-foward set of instructions for the computer to follow.
 <br>
 <br>
-But the biggest con of object-oriented programming is that it typically depends on shared state. Objects and behaviors are typically tacked together on the same entity, which may be accessed at random by any number of functions with non-deterministic order, which may lead to undesirable behavior such as race conditions.
+But the biggest con of object-oriented programming is that it typically depends on shared state. Objects and behaviors are typically tacked together on the same entity, which may be accessed at random by any number of functions with non-deterministic order, potentially leading to undesirable behavior like race conditions.
 <br>
 <br>
 For functional programming, you avoid any shared state or side-effects, which eliminates bugs caused by multiple functions competing for the same resources. And functions tend to be radically simplified and easily recomposed for more generally reusable code compared to object-oriented programming (i.e. tacit programming). Also, functional programming tends to favor declarative and denotational styles, which do not spell out step-by-step instructions for operations, but instead concentrate on what to do, letting the underlying functions take care of the how. This leaves tremendous latitude for refactoring and performance optimization, even allowing you to replace entire algorithms with more efficient ones with very little code change.
