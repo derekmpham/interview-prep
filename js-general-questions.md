@@ -69,16 +69,16 @@ Functions that can take other functions as arguments.
 <strong>What are the pros and cons of functional programming vs object-oriented programming?</strong>
 <br>
 <br>
-For functional programming, you avoid any shared state or side-effects, which eliminates bugs caused by multiple functions competing for the same resources. And functions tend to be radically simplified and easily recomposed for more generally reusable code compared to object-oriented programming (i.e. tacit programming).
-<br>
-<br>
-But a big con of functional programming is that functional programming has a much steeper learning curve than object-oriented programming, because the broad popularity of object-oriented programming has allowed the language and learning materials of object-oriented programming to become more conversational, whereas the language of functional programming tends to be much more academic and formal.
-<br>
-<br>
 For object-oriented programming, it's easy to understand the basic concept of objects and easy to interpret the meaning of method calls. Object-oriented programming tends to use an imperative style rather than a declarative style, which reads like a straight-foward set of instructions for the computer to follow.
 <br>
 <br>
 But the biggest con of object-oriented programming is that it typically depends on shared state. Objects and behaviors are typically tacked together on the same entity, which may be accessed at random by any number of functions with non-deterministic order, which may lead to undesirable behavior such as race conditions.
+<br>
+<br>
+For functional programming, you avoid any shared state or side-effects, which eliminates bugs caused by multiple functions competing for the same resources. And functions tend to be radically simplified and easily recomposed for more generally reusable code compared to object-oriented programming (i.e. tacit programming). Also, functional programming tends to favor declarative and denotational styles, which do not spell out step-by-step instructions for operations, but instead concentrate on what to do, letting the underlying functions take care of the how. This leaves tremendous latitude for refactoring and performance optimization, even allowing you to replace entire algorithms with more efficient ones with very little code change.
+<br>
+<br>
+But a big con of functional programming is that functional programming has a much steeper learning curve than object-oriented programming, because the broad popularity of object-oriented programming has allowed the language and learning materials of object-oriented programming to become more conversational, whereas the language of functional programming tends to be much more academic and formal.
 <br>
 <br>
 <br>
