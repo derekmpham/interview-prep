@@ -72,6 +72,9 @@ Functions that can take other functions as arguments.
 For functional programming, you avoid any shared state or side-effects, which eliminates bugs caused by multiple functions competing for the same resources. And functions tend to be radically simplified and easily recomposed for more generally reusable code compared to object-oriented programming (i.e. tacit programming).
 <br>
 <br>
+But a big con of functional programming is that functional programming has a much steeper learning curve than object-oriented programming, because the broad popularity of object-oriented programming has allowed the language and learning materials of object-oriented programming to become more conversational, whereas the language of functional programming tends to be much more academic and formal.
+<br>
+<br>
 
 <br>
 <br>
