@@ -1,3 +1,4 @@
+
 // Determine if two singly linked lists intersect (return intersecting node)
 
 // LINKED LIST
@@ -99,7 +100,9 @@ function findIntersection(linkedlistOne, linkedlistTwo) {
 	}
 
 	console.log(stackOne);
+	console.log(peekStack(stackOne));
 	console.log(stackTwo);
+	console.log(peekStack(stackTwo));
 
 	if (stackOne.length === 0 || stackTwo.length ===0) { // if either stack/linked list is empty
 		intersect = undefined;
@@ -119,17 +122,19 @@ function findIntersection(linkedlistOne, linkedlistTwo) {
 // test case
 var testOne = new LinkedList(),
 	testTwo = new LinkedList();
-	testNode = new Node(4);
+	nodeOne = new Node(4);
+	nodeTwo = new Node(5);
+	nodeThree = new Node(6);
 
 testOne.add(1);
 testOne.add(2);
 testOne.add(3);
-testOne.add(testNode);
+testOne.add(nodeOne);
+testOne.add(nodeTwo);
 
 testTwo.add(2);
 testTwo.add(3);
-testTwo.add(testNode);
-testTwo.add(5);
-testTwo.add(6);
+testTwo.add(nodeOne);
+testTwo.add(nodeTwo);
 
 findIntersection(testOne, testTwo); // expect to return testNode

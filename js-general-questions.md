@@ -66,6 +66,16 @@ Functions that can take other functions as arguments.
 <br>
 <br>
 <br>
+<strong>What are the pros and cons of functional programming vs object-oriented programming?</strong>
+<br>
+<br>
+For functional programming, you avoid any shared state or side-effects, which eliminates bugs caused by multiple functions competing for the same resources. And functions tend to be radically simplified and easily recomposed for more generally reusable code compared to object-oriented programming (i.e. tacit programming).
+<br>
+<br>
+
+<br>
+<br>
+<br>
 <strong>What's the difference between == and ===?</strong>
 <br>
 <br>
