@@ -21,6 +21,9 @@ Attributes carry additional information about an HTML element and come in "name=
 It's when the engine runs in an event loop. When a blocking operation is needed, the request is started, and the code keeps running without blocking for the result. When the response is ready, an interrupt is fired, which causes an event handler to be run, where the control flow continues. In this way, a single program thread can handle many concurrent operations.
 <br>
 <br>
+UIs are asynchronous by nature, and spend most of their time waiting for user input to interrupt the event loop and trigger event handlers. Node is also asynchronous by default, meaning that the server works in much the same way, waiting in a loop for a network request, and accepting more incoming requests while the first one is being handled.
+<br>
+<br>
 <br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
