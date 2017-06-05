@@ -24,6 +24,9 @@ It's when the engine runs in an event loop. When a blocking operation is needed,
 UIs are asynchronous by nature, and spend most of their time waiting for user input to interrupt the event loop and trigger event handlers. Node is also asynchronous by default, meaning that the server works in much the same way, waiting in a loop for a network request, and accepting more incoming requests while the first one is being handled.
 <br>
 <br>
+It's important in JavaScript, because it's a very natural fit for UI code, and very beneficial to performance on the server (i.e. a lot of users at once).
+<br>
+<br>
 <br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
