@@ -28,6 +28,13 @@ It's important in JavaScript, because it's a very natural fit for UI code, and v
 <br>
 <br>
 <br>
+<strong>What is synchronous programming?</strong>
+<br>
+<br>
+It means that code is executed from top to bottom, blocking on long-running tasks like network requests and disk I/O.
+<br>
+<br>
+<br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
 <br>
