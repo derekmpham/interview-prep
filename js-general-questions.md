@@ -15,6 +15,13 @@ Attributes carry additional information about an HTML element and come in "name=
 <br>
 <br>
 <br>
+<strong>What is asynchronous programming, and why is it important in JavaScript?</strong>
+<br>
+<br>
+It's when the engine runs in an event loop. When a blocking operation is needed, the request is started, and the code keeps running without blocking for the result. When the response is ready, an interrupt is fired, which causes an event handler to be run, where the control flow continues. In this way, a single program thread can handle many concurrent operations.
+<br>
+<br>
+<br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
 <br>
