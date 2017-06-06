@@ -15,3 +15,8 @@ function bubbleSort(arr) {
 
 	return arr;
 }
+
+// test cases
+bubbleSort([5, 4, 1, 3, 2]); // [1, 2, 3, 4, 5]
+bubbleSort([5, 4, 3, 2, 1]); // [1, 2, 3, 4, 5]
+bubbleSort([1, 2, 3, 4, 5]); // [1, 2, 3, 4, 5]
