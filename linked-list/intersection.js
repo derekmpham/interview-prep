@@ -1,5 +1,4 @@
-
-// Determine if two singly linked lists intersect (return intersecting node)
+// Determine if two singly linked lists intersect (return data of intersecting node)
 
 // LINKED LIST
 
@@ -90,51 +89,45 @@ function findIntersection(linkedlistOne, linkedlistTwo) {
 		intersect;
 
 	while (headOne !== null) {
-		stackOne.push(headOne);
+		stackOne.push(headOne.data);
 		headOne = headOne.next;
 	}
 
 	while (headTwo !== null) {
-		stackTwo.push(headTwo);
+		stackTwo.push(headTwo.data);
 		headTwo = headTwo.next;
 	}
 
-	console.log(stackOne);
-	console.log(peekStack(stackOne));
-	console.log(stackTwo);
-	console.log(peekStack(stackTwo));
-
-	if (stackOne.length === 0 || stackTwo.length ===0) { // if either stack/linked list is empty
+	if (stackOne.length === 0 || stackTwo.length === 0) { // if either stack/linked list is empty
 		intersect = undefined;
 	} else if (peekStack(stackOne) !== peekStack(stackTwo)) { // if no intersection
 		intersect = undefined;
+		console.log(peekStack(stackTwo));
+		console.log(peekStack(stackOne));
 		console.log("ELSE IF STATEMENT");
 	} else { // if there is an intersection
-		while (peekStack(stackOne) === peekStack(stackTwo)) {
+		while (peekStack(stackOne) === peekStack(stackTwo)) { // keep moving "backward" until we hit last common node between
 			intersect = peekStack(stackOne);
 			stackOne.pop();
 			stackTwo.pop();
 		}
 	}
+
 	return intersect; // return intersecting node
 }
 
 // test case
 var testOne = new LinkedList(),
 	testTwo = new LinkedList();
-	nodeOne = new Node(4);
-	nodeTwo = new Node(5);
-	nodeThree = new Node(6);
 
 testOne.add(1);
 testOne.add(2);
 testOne.add(3);
-testOne.add(nodeOne);
-testOne.add(nodeTwo);
+testOne.add(4);
+testOne.add(5);
 
-testTwo.add(2);
 testTwo.add(3);
-testTwo.add(nodeOne);
-testTwo.add(nodeTwo);
+testTwo.add(4);
+testTwo.add(5);
 
-findIntersection(testOne, testTwo); // expect to return testNode
+findIntersection(testOne, testTwo); // expect to return 3
