@@ -102,9 +102,6 @@ function findIntersection(linkedlistOne, linkedlistTwo) {
 		intersect = undefined;
 	} else if (peekStack(stackOne) !== peekStack(stackTwo)) { // if no intersection
 		intersect = undefined;
-		console.log(peekStack(stackTwo));
-		console.log(peekStack(stackOne));
-		console.log("ELSE IF STATEMENT");
 	} else { // if there is an intersection
 		while (peekStack(stackOne) === peekStack(stackTwo)) { // keep moving "backward" until we hit last common node between
 			intersect = peekStack(stackOne);
