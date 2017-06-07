@@ -184,3 +184,10 @@ Even though NaN means "not a number", its type is Number. Also, when you compare
 <br>
 <br>
 One way to test if a value is equal to NaN is do value !== value, which only return true if the value is equal to NaN. You can also use the isNaN() function.
+<br>
+<br>
+<br>
+<strong>What's the difference between 'const' and 'var'?</strong>
+<br>
+<br>
+'const' prevents you from changing the value of a variable after the initial setting. It's supposed to "protect" you against mistakes (similar to how static typing prevents you from unintended value conversions).
