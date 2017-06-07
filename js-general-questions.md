@@ -191,3 +191,13 @@ One way to test if a value is equal to NaN is do value !== value, which only ret
 <br>
 <br>
 'const' prevents you from changing the value of a variable after the initial setting. It's supposed to "protect" you against mistakes (similar to how static typing prevents you from unintended value conversions).
+<br>
+<br>
+<br>
+<strong>What is the  difference between window.onload and the jQuery $(document).ready() method?</strong>
+<br>
+<br>
+The window.onload method gets executed after all the page elements have loaded (HTML, CSS, images), which can result in a delay.
+<br>
+<br>
+The $(document).ready() method begins running code as soon as the DOM is loaded, which should be faster and less prone to loading errors across different browsers.
