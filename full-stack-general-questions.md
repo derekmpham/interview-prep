@@ -76,7 +76,7 @@ It's an call that produces no side effects--GET methods are considered to be "sa
 
 <strong>What is event-driven programming?</strong>
 
-Event-driven programming is a paradigm in which the flow of the program is determined by events such as user actions (i.e. mouse clicks, key presses), sensor outputs, or messages from other programs/threads.
+Event-driven programming is a paradigm in which the flow of the program is determined by events such as user actions (i.e. mouse clicks, key presses), sensor outputs, or messages from other programs/threads. In practice, it means that applications act on events.
 
 <br>
 

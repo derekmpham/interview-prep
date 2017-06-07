@@ -28,13 +28,6 @@ It's important in JavaScript, because it's a very natural fit for UI code, and v
 <br>
 <br>
 <br>
-<strong>What is event-driven programming?</strong>
-<br>
-<br>
-It's a paradigm where the flow of the program is determined by events like user actions (i.e. mouse clicks, key presses, etc.), sensor outputs, or messages from other programs/threads. In practice, it means that applications act on events.
-<br>
-<br>
-<br>
 <strong>What is synchronous programming?</strong>
 <br>
 <br>
