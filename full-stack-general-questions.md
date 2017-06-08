@@ -117,3 +117,9 @@ So anything that requires long running requests are not suitable for Ruby soluti
 <strong>What is cloud computing?</strong>
 
 It's when you use a network of remote servers hosted on the Internet to store, manage, and process data rather than using your own physical servers.
+
+<br>
+
+<strong>How do insertion sort, heap sort, and merge sort work?</strong>
+
+Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
