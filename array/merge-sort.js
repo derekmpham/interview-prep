@@ -33,3 +33,6 @@ function merge(left, right) {
 
 	return result;
 }
+
+// test case
+mergeSort([5, 4, 3, 2, 1]);
