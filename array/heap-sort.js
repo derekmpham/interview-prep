@@ -23,3 +23,31 @@ function heapify(arr, len) {
 		siftDown(arr, middle--, len - 1);
 	}
 }
+
+function siftDown(arr, start, end) {
+	var rootNode = start,
+		child = rootNode * 2 + 1,
+		nodeToSwap = rootNode;
+
+	while (child <= end) {
+		if (arr[nodeToSwap] < arr[child]) {
+			swap(arr, nodeToSwap, child);
+		}
+
+		if (child + 1 <= end && arr[nodeToSwap] < arr[child + 1]) {
+			swap(arr, nodeToSwap, child + 1);
+		}
+
+		if (nodeToSwap != rootNode) {
+			swap(arr, rootNode, nodeToSwap);
+			rootNode = nodeToSwap;
+		}
+
+		else {
+			return;
+		}
+
+		nodeToSwap = rootNode;
+		child = rootNode * 2 + 1;
+	}
+}
