@@ -51,3 +51,9 @@ function siftDown(arr, start, end) {
 		child = rootNode * 2 + 1;
 	}
 }
+
+function swap(arr, i, j) {
+	var temp = arr[i];
+	arr[i] = arr[j];
+	arr[j] = temp;
+}
