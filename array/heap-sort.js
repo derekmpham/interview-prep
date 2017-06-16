@@ -14,3 +14,12 @@ function heapSort(arr) {
 
 	return arr;
 }
+
+// function to make array heap tree
+function heapify(arr, len) {
+	// break array into root and two sides to create heap tree
+	var middle = Math.floor((len - 2)/2);
+	while (middle >= 0) {
+		siftDown(arr, middle--, len - 1);
+	}
+}
