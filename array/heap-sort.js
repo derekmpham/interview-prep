@@ -57,3 +57,6 @@ function swap(arr, i, j) {
 	arr[i] = arr[j];
 	arr[j] = temp;
 }
+
+// test case
+heapSort([5, 4, 3, 2, 1]);
