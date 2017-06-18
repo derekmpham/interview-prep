@@ -194,6 +194,13 @@ One way to test if a value is equal to NaN is do value !== value, which only ret
 <br>
 <br>
 <br>
+<strong>What is variable typing?</strong>
+<br>
+<br>
+Variable typing is when you assign a number to a variable and then assign that same variable to a string.
+<br>
+<br>
+<br>
 <strong>What is the  difference between window.onload and the jQuery $(document).ready() method?</strong>
 <br>
 <br>
