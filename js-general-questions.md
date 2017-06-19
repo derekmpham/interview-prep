@@ -208,3 +208,10 @@ The window.onload method gets executed after all the page elements have loaded (
 <br>
 <br>
 The $(document).ready() method begins running code as soon as the DOM is loaded, which should be faster and less prone to loading errors across different browsers.
+<br>
+<br>
+<br>
+<strong>What is a prompt box?</strong>
+<br>
+<br>
+It's a text box that allows the user to enter text or number as an input.
