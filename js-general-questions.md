@@ -215,3 +215,10 @@ The $(document).ready() method begins running code as soon as the DOM is loaded,
 <br>
 <br>
 It's a text box that allows the user to enter text or number as an input.
+<br>
+<br>
+<br>
+<strong>What would be the result of 4+5+"8"?</strong>
+<br>
+<br>
+88. 4 and 5 will be added numerically, since they're integers. And the sum of that and "8" will be concatenated, since "8" is a string.
