@@ -129,3 +129,9 @@ Heap sort starts by building a max heap. A binary max heap is a nearly complete 
 Quick sort is performed by taking the first (leftmost) element of the array as a pivot point. We then compare it to each following element. When we find one that is smaller, we move it to the left. The moving is performed quickly by swapping that element with the first element after the pivot point, and then swapping the pivot point with the element after it. After going through the entire array, we take all points on the left of the pivot and call quick sort on that subarray, and we do the same to all points on the right of the pivot. The recursion is performed until we reach subarrays of 0-1 elements in length.
 
 Merge sort recursively halves the given array. Once the subarrays reach trivial length, merging begins. Merging takes the smallest element between two adjacent subarrays and repeats that step until all elements are taken, resulting in a sorted subarray. The process is repeated on pairs of adjacent subarrays until we arrive at the starting array, but sorted.
+
+<br>
+
+<strong>What is unit test?</strong>
+
+It tests a single unit of functionality.
