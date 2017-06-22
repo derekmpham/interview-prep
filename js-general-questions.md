@@ -243,3 +243,10 @@ It's a text box that allows the user to enter text or number as an input.
 <br>
 <br>
 document.form[0].submit();
+<br>
+<br>
+<br>
+<strong>What are all the looping structures in JavaScript?</strong>
+<br>
+<br>
+For, while, and do-while loops.
