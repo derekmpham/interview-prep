@@ -235,4 +235,11 @@ It's a text box that allows the user to enter text or number as an input.
 <strong>What would be the result of 4+5+"8"?</strong>
 <br>
 <br>
-88. 4 and 5 will be added numerically, since they're integers. And the sum of that and "8" will be concatenated, since "8" is a string.
+98. 4 and 5 will be added numerically, since they're integers. And the sum of that and "8" will be concatenated, since "8" is a string.
+<br>
+<br>
+<br>
+<strong>Explain how you can submit a form using JavaScript?</strong>
+<br>
+<br>
+document.form[0].submit();
