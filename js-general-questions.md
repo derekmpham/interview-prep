@@ -12,6 +12,13 @@ It stands for Document Object Model. A document object represents the html docum
 <br>
 <br>
 <br>
+<strong>What is BOM?</strong>
+<br>
+<br>
+It stands for Browser Object Model. It provides interaction with the browser. The default of browser is the window.
+<br>
+<br>
+<br>
 <strong>What's the difference between an "attribute" and a "property"?</strong>
 <br>
 <br>
