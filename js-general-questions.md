@@ -250,3 +250,25 @@ document.form[0].submit();
 <br>
 <br>
 For, while, and do-while loops.
+<br>
+<br>
+<br>
+<strong>What are the advantages of JavaScript?</strong>
+<br>
+<br>
+There's less server interaction, immediate feedback to visitors, increased interactivity, and richer interfaces.
+<br>
+<br>
+Less server interaction: You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+<br>
+<br>
+Immediate feedback to visitors: They don't have to wait for a page reload to see if they've forgotten to enter something.
+<br>
+<br>
+Increased interactivity: You can create interfaces that react when the user hovers over them with a mouse or activates them through the keyboard.
+<br>
+<br>
+Richer interfaces: You can use JavaScript to include items like drag-and-drop components and sliders to give a rich interface to visitors.
+<br>
+<br>
+<br>
