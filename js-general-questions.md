@@ -253,6 +253,13 @@ For, while, and do-while loops.
 <br>
 <br>
 <br>
+<strong>What are all the types of pop-up boxes in JavaScript?</strong>
+<br>
+<br>
+Alert, Confirm, and Prompt.
+<br>
+<br>
+<br>
 <strong>What are the advantages of JavaScript?</strong>
 <br>
 <br>
