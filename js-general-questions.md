@@ -246,6 +246,13 @@ document.form[0].submit();
 <br>
 <br>
 <br>
+<strong>What is the function of the delete operator?</strong>
+<br>
+<br>
+It's to delete all variables and objects in a program, but it cannot delete variables declared "var".
+<br>
+<br>
+<br>
 <strong>What are all the looping structures in JavaScript?</strong>
 <br>
 <br>
