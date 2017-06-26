@@ -253,6 +253,16 @@ It's to delete all variables and objects in a program, but it cannot delete vari
 <br>
 <br>
 <br>
+<strong>What is the use of Void(0)?</strong>
+<br>
+<br>
+It's used to prevent the page from refreshing by passing 0 as the parameter while calling.
+<br>
+<br>
+Void(0) is used to call another method without refreshing the page.
+<br>
+<br>
+<br>
 <strong>What are all the looping structures in JavaScript?</strong>
 <br>
 <br>
