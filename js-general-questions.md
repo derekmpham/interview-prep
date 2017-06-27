@@ -246,6 +246,16 @@ document.form[0].submit();
 <br>
 <br>
 <br>
+<strong>Explain the pop() method in JavaScript?</strong>
+<br>
+<br>
+It's similar to the shift() method, but the difference is that the shift() method works at the start of the array. Also, the pop() method takes the last element off of the given array and returns it. The array that's being called is then altered.
+<br>
+<br>
+Example: If var room = ["chair", "table", "light"], and you do room.pop(); room = ["chair", "table"]
+<br>
+<br>
+<br>
 <strong>What is the function of the delete operator?</strong>
 <br>
 <br>
