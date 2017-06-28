@@ -252,6 +252,9 @@ document.form[0].submit();
 To change the class, do: document.getElementById("idName").className = "anyclass";
 <br>
 <br>
+To change the style, do something like: document.getElementById("idName").style.fontSize = 20;
+<br>
+<br>
 <br>
 <strong>Explain the pop() method in JavaScript?</strong>
 <br>
