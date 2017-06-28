@@ -246,6 +246,13 @@ document.form[0].submit();
 <br>
 <br>
 <br>
+<strong>How can you change the class/style of an element?</strong>
+<br>
+<br>
+To change the class, do: document.getElementById("idName").className = "anyclass";
+<br>
+<br>
+<br>
 <strong>Explain the pop() method in JavaScript?</strong>
 <br>
 <br>
