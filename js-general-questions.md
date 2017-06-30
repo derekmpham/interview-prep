@@ -256,6 +256,13 @@ To change the style, do something like: document.getElementById("idName").style.
 <br>
 <br>
 <br>
+<strong>What's the use of the push method in JavaScript?</strong>
+<br>
+<br>
+It's used to add or append one or more elements to the end of an array. We can append multiple elements by passing multiple arguments with push.
+<br>
+<br>
+<br>
 <strong>Explain the pop() method in JavaScript?</strong>
 <br>
 <br>
