@@ -263,6 +263,13 @@ It's used to add or append one or more elements to the end of an array. We can a
 <br>
 <br>
 <br>
+<strong>What does the unshift method do in JavaScript?</strong>
+<br>
+<br>
+It's like the push method, expect that it works at the beginning of the array. The unshift method is used to prepend one or more elements to the beginning of the array.
+<br>
+<br>
+<br>
 <strong>Explain the pop() method in JavaScript?</strong>
 <br>
 <br>
