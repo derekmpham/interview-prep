@@ -49,6 +49,13 @@ It means that code is executed from top to bottom, blocking on long-running task
 <br>
 <br>
 <br>
+<strong>What are global variables? How are they declared and what are the problems associated with using them?</strong>
+<br>
+<br>
+Global variables are available throughout the length of the code--in other words, they have no scope. "var" is used to declare a local variable or object. So if you omit "var", you're declaring a global variable.
+<br>
+<br>
+<br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
 <br>
