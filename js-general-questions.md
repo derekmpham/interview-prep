@@ -55,6 +55,9 @@ It means that code is executed from top to bottom, blocking on long-running task
 Global variables are available throughout the length of the code--in other words, they have no scope. "var" is used to declare a local variable or object. So if you omit "var", you're declaring a global variable.
 <br>
 <br>
+Problems with using global variables deal with the clash of variable names of local and global scope. Also, it's difficult to debug and test code that relies on global variables.
+<br>
+<br>
 <br>
 <strong>Explain how "this" works in JavaScript.</strong>
 <br>
