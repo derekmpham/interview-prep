@@ -170,6 +170,13 @@ Hoisting is when you move all declarations to the top of the current scope. So w
 <br>
 <br>
 <br>
+<strong>Does JavaScript have concept level scope?</strong>
+<br>
+<br>
+No, JavaScript doesn't have concept level scope. The variable declared inside the function has scope inside the function.
+<br>
+<br>
+<br>
 <strong>What is "use strict"?</strong>
 <br>
 <br>
