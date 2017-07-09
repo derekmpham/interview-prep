@@ -62,6 +62,10 @@ This principle is applied through HTTP requests and responses. The client comput
 
 <br>
 
+<strong>Explain the purpose of each of the HTTP request types when used with a RESTFUL web service.</strong>
+
+There's five main HTTP request types used with a RESTFUL web service: GET, POST, PUT, UPDATE, and DELETE.
+
 <strong>What is an idempotent operation?</strong>
 
 It's an operation that produces the same result no matter how manytimes it's repeated--PUT and DELETE methods are considered to be idempotent.
