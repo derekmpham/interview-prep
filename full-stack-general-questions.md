@@ -66,6 +66,18 @@ This principle is applied through HTTP requests and responses. The client comput
 
 There's five main HTTP request types used with a RESTFUL web service: GET, POST, PUT, UPDATE, and DELETE.
 
+GET: Retrieves data from the server--should only retrieve data and should have no other effect.
+
+POST: Sends data to the server for a new entity. It's often used to upload a file or submit a completed web form.
+
+PUT: Similar to POST, but used to replace an existing entity (i.e. update).
+
+PATCH: Similar to PUT, but used to update only certain fields within an existing entity.
+
+DELETE: Removes data from the server.
+
+<br>
+
 <strong>What is an idempotent operation?</strong>
 
 It's an operation that produces the same result no matter how manytimes it's repeated--PUT and DELETE methods are considered to be idempotent.
