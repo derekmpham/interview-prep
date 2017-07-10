@@ -90,6 +90,10 @@ It's an call that produces no side effects--GET methods are considered to be "sa
 
 <br>
 
+<strong>Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP?</strong>
+
+A stateless communications protocol treats each request as an independent transaction. It therefore does not require the server to retain any session, identity, or status information spanning multiple requests from the same source.
+
 <strong>What is event-driven programming?</strong>
 
 Event-driven programming is a paradigm in which the flow of the program is determined by events such as user actions (i.e. mouse clicks, key presses), sensor outputs, or messages from other programs/threads. In practice, it means that applications act on events.
