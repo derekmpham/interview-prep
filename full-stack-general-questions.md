@@ -96,6 +96,12 @@ A stateless communications protocol treats each request as an independent transa
 
 In contrast, a stateful communications protocol is one in which the responder maintains "state" information (session data, identity, status, etc.) across multiple requests from the same source.
 
+HTTP is a stateless protocol. HTTP does not require the server to retain information or status about each user for the duration of the mulitple requests.
+
+Some web servers implement states using different methods (using cookies, custom headers, hidden form fields, etc.). But at the very core of every web application, everything relies on HTTP, which is still a stateless protocol that is based on the simple request/response paradigm.
+
+<br>
+
 <strong>What is event-driven programming?</strong>
 
 Event-driven programming is a paradigm in which the flow of the program is determined by events such as user actions (i.e. mouse clicks, key presses), sensor outputs, or messages from other programs/threads. In practice, it means that applications act on events.
