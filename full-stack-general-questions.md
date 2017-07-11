@@ -164,6 +164,8 @@ Merge sort recursively halves the given array. Once the subarrays reach trivial 
 
 It tests a single unit of functionality.
 
+<br>
+
 <strong>What is tail recursion?</strong>
 
 It's a subroutine call performed as the final action of a procedure.

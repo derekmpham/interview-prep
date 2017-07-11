@@ -351,3 +351,10 @@ Richer interfaces: You can use JavaScript to include items like drag-and-drop co
 <br>
 <br>
 Cookies are the small test files stored in a computer and they're created when the user visits the websites to store information that they need. Examples include username details and shopping cart information from previous visits.
+<br>
+<br>
+<br>
+<strong>What is an anonymous function in JavaScript?</strong>
+<br>
+<br>
+It's a function declared without any named identifier and is generally not accessible after its declaration.
