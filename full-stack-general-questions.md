@@ -1,5 +1,13 @@
 # GENERAL FULL-STACK QUESTIONS
 
+<strong>What is a full-stack?</strong>
+
+A full-stack developer is someone who can single-handedly plan, design, develop, deploy, and maintain a given software application.
+
+When talking about applications, we often talk about a "stack" of technologies that these applications are built on. For example, a web app would have the servers it runs on, a database, a web server, a server programming (backend) language, and HTML/CSS/JavaScript (frontend) on the client side. Complex applications may have even more technologies in the stack. So a full-stack developer is someone who can work with all those technologies.
+
+<br>
+
 <strong>What is <i>polymorphism?</i></strong>
 
 Polymorphism is the ability of a function to handle different types of objects. For example, a triangle, square, and circle can all use a "draw" function, because they inherit the "draw" function from their common "Shape" ancestor.
