@@ -353,6 +353,9 @@ Richer interfaces: You can use JavaScript to include items like drag-and-drop co
 JavaScript's main weakness is security. For example, one of the most common errors is HTML injection, which allows third parties to inject JavaScript into your security context. This allows an attacker to control what a user does on your site and completely break account security.
 <br>
 <br>
+Another weakness is JavaScript's ubiquity and versatility. It can be a double-edged sword in that there's a lot of room for programming quirks that can lead to inconsistent performance across different platforms.
+<br>
+<br>
 <br>
 <strong>What are JavaScript Cookies?</strong>
 <br>
