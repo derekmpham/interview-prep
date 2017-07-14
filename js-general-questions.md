@@ -347,6 +347,13 @@ Richer interfaces: You can use JavaScript to include items like drag-and-drop co
 <br>
 <br>
 <br>
+<strong>What are the disadvantages of using JavaScript?</strong>
+<br>
+<br>
+JavaScript's main weakness is security. For example, one of the most common errors is HTML injection, which allows third parties to inject JavaScript into your security context. This allows an attacker to control what a user does on your site and completely break account security.
+<br>
+<br>
+<br>
 <strong>What are JavaScript Cookies?</strong>
 <br>
 <br>
