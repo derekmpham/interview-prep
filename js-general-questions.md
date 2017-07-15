@@ -368,3 +368,10 @@ Cookies are the small test files stored in a computer and they're created when t
 <br>
 <br>
 It's a function declared without any named identifier and is generally not accessible after its declaration.
+<br>
+<br>
+<br>
+<strong>What are ways in which you can reduce the load time of a web application?</strong>
+<br>
+<br>
+You can enable browser caching, optimize images, minify resources, minimize HTTP requests, and reduce redirects.
