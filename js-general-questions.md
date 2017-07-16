@@ -364,6 +364,13 @@ Cookies are the small test files stored in a computer and they're created when t
 <br>
 <br>
 <br>
+<strong>How would you use persistent storage on browsers? What options would you use?</strong>
+<br>
+<br>
+For HTML browsers, a good choice would be local storage and persistent storage. For non-HTML browsers, you would use cookies.
+<br>
+<br>
+<br>
 <strong>What is an anonymous function in JavaScript?</strong>
 <br>
 <br>
