@@ -382,3 +382,10 @@ It's a function declared without any named identifier and is generally not acces
 <br>
 <br>
 You can enable browser caching, optimize images, minify resources, minimize HTTP requests, and reduce redirects.
+<br>
+<br>
+<br>
+<strong>What is namespacing in JavaScript and how is it used?</strong>
+<br>
+<br>
+It's used for grouping functions, variables, and whatnot, under a unique name. It's a name that's been attached to the desired functions, objects, and properties. This enables code reuse and improves modularity in the coding.
