@@ -389,3 +389,10 @@ You can enable browser caching, optimize images, minify resources, minimize HTTP
 <br>
 <br>
 It's used for grouping functions, variables, and whatnot, under a unique name. It's a name that's been attached to the desired functions, objects, and properties. This enables code reuse and improves modularity in the coding.
+<br>
+<br>
+<br>
+<strong>Explain the role of break and continue statements.</strong>
+<br>
+<br>
+Break statements are used to come out of the current loop.
