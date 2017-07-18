@@ -395,4 +395,4 @@ It's used for grouping functions, variables, and whatnot, under a unique name. I
 <strong>Explain the role of break and continue statements.</strong>
 <br>
 <br>
-Break statements are used to come out of the current loop.
+Break statements are used to come out of the current loop, while continue statements continue the current loop with a new recurrence.
