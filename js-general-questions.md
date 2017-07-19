@@ -396,3 +396,10 @@ It's used for grouping functions, variables, and whatnot, under a unique name. I
 <br>
 <br>
 Break statements are used to come out of the current loop, while continue statements continue the current loop with a new recurrence.
+<br>
+<br>
+<br>
+<strong>What is a closure in JavaScript?</strong>
+<br>
+<br>
+A closure resembles an object. It gets instantiated whenever you call a function. The scope of a closure is lexical, meaning everything contained within the function in which the closure belongs to has access to any variable that's in it.
