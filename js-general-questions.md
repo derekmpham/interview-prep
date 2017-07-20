@@ -198,13 +198,6 @@ Event bubbling is when an event triggers at the deepest possible element, and tr
 <br>
 <br>
 <br>
-<strong>What is jQuery?</strong>
-<br>
-<br>
-It's a JavaScript library that makes it easier to use JavaScript on the front end. You can do things like DOM manipulation and AJAX calls without having to write as many lines of JavaScript.
-<br>
-<br>
-<br>
 <strong>What is NaN? What is its type? How can you reliably test if a value is equal to NaN?</strong>
 <br>
 <br>
@@ -403,3 +396,14 @@ Break statements are used to come out of the current loop, while continue statem
 <br>
 <br>
 A closure resembles an object. It gets instantiated whenever you call a function. The scope of a closure is lexical, meaning everything contained within the function in which the closure belongs to has access to any variable that's in it.
+<strong>What is jQuery?</strong>
+<br>
+<br>
+It's a JavaScript library that makes it easier to use JavaScript on the front end. You can do things like DOM manipulation and AJAX calls without having to write as many lines of JavaScript.
+<br>
+<br>
+<br>
+<strong>What is $() in jQuery?</strong>
+<br>
+<br>
+It's an alias of the jQuery() function. $() is used to wrap any object into a jQuery object, which then allows you to call various methods defined in the jQuery object.
