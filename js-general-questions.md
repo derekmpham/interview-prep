@@ -407,3 +407,10 @@ It's a JavaScript library that makes it easier to use JavaScript on the front en
 <br>
 <br>
 It's an alias of the jQuery() function. $() is used to wrap any object into a jQuery object, which then allows you to call various methods defined in the jQuery object.
+<br>
+<br>
+<br>
+<strong>What are jQuery events?</strong>
+<br>
+<br>
+They're actions performed on specific conditions. When you perform these actions on an HTML page, you can do whatever you want. You perform an action through event handlers like bind(), unbind(), blur(), off(), hover(), on(), one(), ready(), and trigger().
