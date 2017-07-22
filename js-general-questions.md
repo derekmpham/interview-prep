@@ -414,3 +414,10 @@ It's an alias of the jQuery() function. $() is used to wrap any object into a jQ
 <br>
 <br>
 They're actions performed on specific conditions. When you perform these actions on an HTML page, you can do whatever you want. You perform an action through event handlers like bind(), unbind(), blur(), off(), hover(), on(), one(), ready(), and trigger().
+<br>
+<br>
+<br>
+<strong>What is chaining?</strong>
+<br>
+<br>
+Chaining is used to connect multiple events and functions in a selector. It specifies multiple functions and/or selectors to an element.
