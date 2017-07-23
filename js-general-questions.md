@@ -421,3 +421,10 @@ They're actions performed on specific conditions. When you perform these actions
 <br>
 <br>
 Chaining is used to connect multiple events and functions in a selector. It specifies multiple functions and/or selectors to an element.
+<br>
+<br>
+<br>
+<strong>What's the difference between event.preventDefault() and event.stopPropagation?</strong>
+<br>
+<br>
+preventDefault() stops the default action of an element from happening. On the other hand, event.stopPropagation() prevents the event from bubbling up the DOM tree, thereby preventing any parent handlers from being notified of the event.
