@@ -428,3 +428,10 @@ Chaining is used to connect multiple events and functions in a selector. It spec
 <br>
 <br>
 preventDefault() stops the default action of an element from happening. On the other hand, event.stopPropagation() prevents the event from bubbling up the DOM tree, thereby preventing any parent handlers from being notified of the event.
+<br>
+<br>
+<br>
+<strong>How can we hide an image on a button click using jQuery?</strong>
+<br>
+<br>
+We can use a click handler and then apply the hide method to the image, like $("#button").click(function(){$("#image").hide();});
