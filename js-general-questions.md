@@ -435,3 +435,10 @@ preventDefault() stops the default action of an element from happening. On the o
 <br>
 <br>
 We can use a click handler and then apply the hide method to the image, like $("#button").click(function(){$("#image").hide();});
+<br>
+<br>
+<br>
+<strong>What is AJAX in jQuery?</strong>
+<br>
+<br>
+AJAX stands for "Asynchronous JavaScript and XML". AJAX is about exchanging data with a server without reloading the whole page. It's a technique for creating fast and dynamic web pages.
