@@ -249,6 +249,13 @@ It's a text box that allows the user to enter text or number as an input.
 <br>
 <br>
 <br>
+<strong>Name some JavaScript functions used to convert non-numerical values into numbers.</strong>
+<br>
+<br>
+parseInt(), parseFloat(), and Number().
+<br>
+<br>
+<br>
 <strong>Explain how you can submit a form using JavaScript?</strong>
 <br>
 <br>
