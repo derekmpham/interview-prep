@@ -449,3 +449,10 @@ We can use a click handler and then apply the hide method to the image, like $("
 <br>
 <br>
 AJAX stands for "Asynchronous JavaScript and XML". AJAX is about exchanging data with a server without reloading the whole page. It's a technique for creating fast and dynamic web pages.
+<br>
+<br>
+<br>
+<strong>What is the format of an AJAX request?</strong>
+<br>
+<br>
+An AJAX request can be in either a text file format, HTML format, or as a JSON object.
