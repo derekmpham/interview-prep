@@ -456,3 +456,10 @@ AJAX stands for "Asynchronous JavaScript and XML". AJAX is about exchanging data
 <br>
 <br>
 An AJAX request can be in either a text file format, HTML format, or as a JSON object.
+<br>
+<br>
+<br>
+<strong>How can you find out that an AJAX request has been completed?</strong>
+<br>
+<br>
+We can use the ReadyState property to check whether the AJAX request has been completed. If the property is equal to 4, the request has been completed and the data is now available.
