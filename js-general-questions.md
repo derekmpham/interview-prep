@@ -29,6 +29,13 @@ Attributes carry additional information about an HTML element and come in "name=
 <br>
 <br>
 <br>
+<strong>Explain the differences between one-way data flow and two-way data binding.</strong>
+<br>
+<br>
+In two-way data binding, changes to the UI and changes to the model occur asynchronously, where a change on one end is reflected on the other end. However, in one-way data binding, data only flows one way, and any changes that the user makes to the view will not be reflected in the model until the two are synced.
+<br>
+<br>
+<br>
 <strong>What is asynchronous programming, and why is it important in JavaScript?</strong>
 <br>
 <br>
