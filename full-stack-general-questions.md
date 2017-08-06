@@ -14,9 +14,15 @@ Polymorphism is the ability of a function to handle different types of objects. 
 
 <br>
 
-<strong>What is encapsulation?</strong>
+<strong>What is <i>encapsulation</i>?</strong>
 
 It's one of the fundamentals of object-oriented programming that refers to the packing of data and functions into a single component.
+
+<br>
+
+<strong>What is <i>inversion of control</i>?</strong>
+
+It's a design programming technique in object-oriented programming in which custom-written portions of a computer program receive the flow of control from a generic, reusable library.
 
 <br>
 
