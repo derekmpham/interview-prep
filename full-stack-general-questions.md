@@ -14,6 +14,12 @@ Polymorphism is the ability of a function to handle different types of objects. 
 
 <br>
 
+<strong>What is encapsulation?</strong>
+
+It's one of the fundamentals of object-oriented programming that refers to the packing of data and functions into a single component.
+
+<br>
+
 <strong>What's the difference between inheritance and composition?</strong>
 
 Inheritance represents the "is a" relationship between different classes. It allows a class to have the same behavior as another class and extend or tailor that behavior to provide special action for specific needs.
