@@ -189,3 +189,9 @@ It tests a single unit of functionality.
 <strong>What is tail recursion?</strong>
 
 It's a subroutine call performed as the final action of a procedure.
+
+<br>
+
+<strong>What is dynamic binding?</strong>
+
+It's the process of linking a procedure call to a specific sequence of code at run-time, which means that the code to be executed for a specific procedure call is not known until run-time.
