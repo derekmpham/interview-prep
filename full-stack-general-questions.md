@@ -68,6 +68,14 @@ The Single responsibility principle is a rule where each class should have only 
 
 The Interface segregation principle is similar to the Single responsibility principle, but applicable to interfaces. Each interface should be responsible for a specific task. The developers shouldn't implement methods that they don't need.
 
+<br>
+
+<strong>What is the Open/closed principle?</strong>
+
+The Open/closed principle is a rule in which the developers should focus more on extending the software entities rather than modifying them.
+
+<br>
+
 <strong>What are the advantages of using modules?</strong>
 
 (1) Reuse, (2) Decoupling, and (3) Namespace. You can easily reuse code using modules. If certain tasks are sectioned off to certain functions or classes, you can reuse that particular code whenever you need to perform that task again.
