@@ -122,6 +122,12 @@ It's an call that produces no side effects--GET methods are considered to be "sa
 
 <br>
 
+<strong>What is the uniform access principle?</strong>
+
+It's a rule in which client code should not be affected by a decision to implement an attribute as a field or method.
+
+<br>
+
 <strong>Explain the difference between stateless and stateful protocols. Which type of protocol is HTTP?</strong>
 
 A stateless communications protocol treats each request as an independent transaction. It therefore does not require the server to retain any session, identity, or status information spanning multiple requests from the same source.
