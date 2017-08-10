@@ -46,6 +46,12 @@ In synchronous multimaster replication, each server can accept write requests, a
 
 <br>
 
+<strong>What is <i>asynchronous multimaster replication</i>?</strong>
+
+In asynchronous multimaster replication, each server works independently, and periodically communicates with the other servers to identify conflicting transactions. The conflicts can be resolved by users or conflict resolution rules.
+
+<br>
+
 <strong>Why do you need a web server?</strong>
 
 You need a web server to store web site files and broadcast them over the internet for your site visitors to see.
