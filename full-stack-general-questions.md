@@ -40,6 +40,12 @@ Horizontal scaling means that you scale your database by adding more machines in
 
 <br>
 
+<strong>What is <i>synchronous multimaster replication</i>?</strong>
+
+In synchronous multimaster replication, each server can accept write requests, and modified data is transmitted from the original server to every other server before each transaction commits.
+
+<br>
+
 <strong>Why do you need a web server?</strong>
 
 You need a web server to store web site files and broadcast them over the internet for your site visitors to see.
