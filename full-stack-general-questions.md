@@ -200,7 +200,7 @@ It's when you use a network of remote servers hosted on the Internet to store, m
 
 <strong>What is <i>deadlock</i>? How about <i>livelock</i>?</strong>
 
-Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does.
+Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does. Livelock is similar to deadlock, expect that the states of the processes involved in the livelock constantly change with regards to one another, none progressing.
 
 <br>
 
