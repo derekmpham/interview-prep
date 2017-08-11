@@ -198,6 +198,12 @@ It's when you use a network of remote servers hosted on the Internet to store, m
 
 <br>
 
+<strong>What is <i>deadlock</i>? How about <i>livelock</i>?</strong>
+
+Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
