@@ -204,6 +204,12 @@ Deadlock is a situation in which two or more competing actions are each waiting 
 
 <br>
 
+<strong>What is <i>race condition</i>?</strong>
+
+It describes the behavior of the software system where the output is dependent on the sequence or timing of other uncontrollable events.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
