@@ -210,6 +210,12 @@ It describes the behavior of the software system where the output is dependent o
 
 <br>
 
+<strong>What is <i>thread contention</i>?</strong>
+
+Thread contention is when two threats try to access either the same resource or related resources in such a way that at least one of the contending threads runs more slowly than it would if the other thread(s) were not running.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
