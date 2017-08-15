@@ -216,6 +216,12 @@ Thread contention is when two threats try to access either the same resource or 
 
 <br>
 
+<strong>What is the difference between <i>thread</i> and <i>process</i>?</strong>
+
+Threads (of the same process) run in a shared memory space, while processes run in separate memory spaces.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
