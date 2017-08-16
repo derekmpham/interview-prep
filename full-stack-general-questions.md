@@ -70,6 +70,12 @@ There are four main drawbacks of not using separation of concerns. First, adding
 
 <br>
 
+<strong>What are <i>microservices</i>?</strong>
+
+Microservices are a style of software architecture that involves deliverying systems as a set of very small, granular, independent collaborating services.
+
+<br>
+
 <strong>What is the Single responsibility principle?</strong>
 
 The Single responsibility principle is a rule where each class should have only one task or responsibility. If a class is performing more than one task, it leads to confusion.
