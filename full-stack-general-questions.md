@@ -76,6 +76,12 @@ Microservices are a style of software architecture that involves deliverying sys
 
 <br>
 
+<strong>What are the pros of microservices?</strong>
+
+(1) The services are easy to replace; and (2) Services can be implemented using different programming languages, databases, hardware, and software environment, depending on what fits best.
+
+<br>
+
 <strong>What is the Single responsibility principle?</strong>
 
 The Single responsibility principle is a rule where each class should have only one task or responsibility. If a class is performing more than one task, it leads to confusion.
