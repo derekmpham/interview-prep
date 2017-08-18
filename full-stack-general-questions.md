@@ -240,6 +240,12 @@ Sequential consistency is when the result of any execution is the same as if the
 
 <br>
 
+<strong>What is <i>memory barrier</i>?</strong>
+
+It's a type of barrier instruction that causes a CPU or compiler to enforce an ordering constraint on memory operations issued before and after the barrier instruction.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
