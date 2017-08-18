@@ -234,6 +234,12 @@ Threads (of the same process) run in a shared memory space, while processes run 
 
 <br>
 
+<strong>What is <i>sequential consistency</i>?</strong>
+
+Sequential consistency is when the result of any execution is the same as if the operations of all the processors were executed in some sequential order, and the operations of each individual processor appear in this sequence in the order specified by its program.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
