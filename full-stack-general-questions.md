@@ -246,6 +246,12 @@ It's a type of barrier instruction that causes a CPU or compiler to enforce an o
 
 <br>
 
+<strong>What is <i>data race</i>?</strong>
+
+A program contains a data race when a program contains two conflicting accesses that are not ordered by a "happens-before" relationship. Two accesses ("reads of" or "writes to") to the same variable are said to be conflicting if at least one of the accesses is a write.
+
+<br>
+
 <strong>How do insertion sort, heap sort, quick sort, and merge sort work?</strong>
 
 Insertion sort takes elements of the array sequentially, and maintains a sorted subarray to the left of the current point. It does this by taking an element, finding its correct position in the sorted array, and shifting all following elements by 1, leaving a space for the element to be inserted.
