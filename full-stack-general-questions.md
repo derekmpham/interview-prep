@@ -8,6 +8,14 @@ When talking about applications, we often talk about a "stack" of technologies t
 
 <br>
 
+<strong>What is MVC?</strong>
+
+It's a architectural pattern for implementing user interfaces. There's the model ("M"), the view ("V"), and the controller ("C").
+
+The model stores data that's retrieved through commands from the controller and displayed in the view. The view generates new output to the user based on changes in the model. And the controller can do a couple of things: (1) It can send commands to the model to update the model's state (i.e. editing a document); or (2) it can send commands to its associated view to change the view's presentation of the model (i.e. scrolling through a document).
+
+<br>
+
 <strong>What is <i>polymorphism?</i></strong>
 
 Polymorphism is the ability of a function to handle different types of objects. For example, a triangle, square, and circle can all use a "draw" function, because they inherit the "draw" function from their common "Shape" ancestor.
