@@ -272,9 +272,17 @@ Merge sort recursively halves the given array. Once the subarrays reach trivial 
 
 <br>
 
-<strong>What is unit test?</strong>
+<strong>What is <i>unit test</i>?</strong>
 
 It tests a single unit of functionality.
+
+<br>
+
+<strong>What is <i>component test</i>?</strong>
+
+It tests each component (i.e. module) in an application separately. It finds the defects in the module and verifies the functioning of software.
+
+It's done after unit testing, and unlike unit testing, component testing uses real data instead of dummy data to test written code.
 
 <br>
 
