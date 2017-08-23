@@ -292,6 +292,12 @@ It examines several parts of a system to make sure that when integrated, these p
 
 <br>
 
+<strong>What's the difference between a stub and a mock?</strong>
+
+A stub is a test double with preprogrammed behavior, while a mock is a stub with preprogrammed expectations.
+
+<br>
+
 <strong>What is tail recursion?</strong>
 
 It's a subroutine call performed as the final action of a procedure.
