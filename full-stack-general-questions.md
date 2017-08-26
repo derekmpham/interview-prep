@@ -292,6 +292,12 @@ It examines several parts of a system to make sure that when integrated, these p
 
 <br>
 
+<strong>What is <i>user acceptance testing</i>?</strong>
+
+It's the last phase of the software testing process and often considered the last phase in the web development process. During user acceptance testing, you record and correct any defects that are discovered while people from the intended audience are using your product. It's the closest thing to a "real world" test available. It also gives users the chance to interact with the software and find out if everything works as it should.
+
+<br>
+
 <strong>What's the difference between a stub and a mock?</strong>
 
 A stub is a test double with preprogrammed behavior, while a mock is a stub with preprogrammed expectations.
