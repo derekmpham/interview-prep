@@ -306,6 +306,12 @@ A stub is a test double with preprogrammed behavior, while a mock is a stub with
 
 <br>
 
+<strong>List some different types of tests</strong>
+
+Acceptance testing, functional testing, smoke testing, regression testing, unit testing, integration testing, and stress testing.
+
+<br>
+
 <strong>What is tail recursion?</strong>
 
 It's a subroutine call performed as the final action of a procedure.
