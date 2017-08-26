@@ -292,9 +292,11 @@ It examines several parts of a system to make sure that when integrated, these p
 
 <br>
 
-<strong>What is <i>user acceptance testing</i>?</strong>
+<strong>What is <i>user acceptance testing</i>? How about <i>behavior-driven development</i>?</strong>
 
-It's the last phase of the software testing process and often considered the last phase in the web development process. During user acceptance testing, you record and correct any defects that are discovered while people from the intended audience are using your product. It's the closest thing to a "real world" test available. It also gives users the chance to interact with the software and find out if everything works as it should.
+User acceptance testing the last phase of the software testing process and often considered the last phase in the web development process. During user acceptance testing, you record and correct any defects that are discovered while people from the intended audience are using your product. It's the closest thing to a "real world" test available. It also gives users the chance to interact with the software and find out if everything works as it should.
+
+Behavior-drive development is a software development methodology where an application is specified and designed by describing how its behavior should appear to an outside observer.
 
 <br>
 
