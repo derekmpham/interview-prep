@@ -16,6 +16,12 @@ The model stores data that's retrieved through commands from the controller and 
 
 <br>
 
+<strong>What's the difference between and Model-View-Template (MVT) and MVC?</strong>
+
+The difference is that Django (Python web framework) takes care of the Controller part, leaving us with the template. The template is an HTML file mixed with Django Template language (DTL).
+
+<br>
+
 <strong>What is <i>polymorphism?</i></strong>
 
 Polymorphism is the ability of a function to handle different types of objects. For example, a triangle, square, and circle can all use a "draw" function, because they inherit the "draw" function from their common "Shape" ancestor.
