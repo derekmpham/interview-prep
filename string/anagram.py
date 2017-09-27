@@ -6,21 +6,29 @@ def is_anagram(str_one, str_two):
 	b = str_two.lower()
 
 	# convert strings into lists and sort each
-	a = list(a).sort()
-	b = list(b).sort()
+	a = list(a)
+	b = list(b)
 
-	# convert lists back into strings
+	# sort lists
+	a.sort()
+	b.sort()
+
+	# consolidate lists into strings
 	a = "".join(a)
 	b = "".join(b)
 
 	# compare sorted strings
 	if a == b:
-		return true
+		print True
 	else:
-		return false
+		print False
 
 
+# test cases
+word_one = "pea"
+word_two = "Ape"
+is_anagram(word_one, word_two) # returns true
 
-
-
-
+word_three = "arm"
+word_four = "mary"
+is_anagram(word_three, word_four) # returns false
