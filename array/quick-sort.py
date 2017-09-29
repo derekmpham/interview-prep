@@ -1,19 +1,22 @@
 # Sort list using recursion
 
 def quick_sort(lst):
-	if len(lst) == 0:
-		print []
+	if len(lst) <= 1:
+		return lst
 
 	left = []
 	right = []
-	pivot = lst[0]
 
 	# compare first element in list to the rest
-	for i in range(1, len(lst)):
-		if lst[i] < pivot:
-			left.append(lst[i])
+	for i in lst[1:]:
+		if lst[i] < lst[0]:
+			left.append(i)
 		else:
-			right.append(lst[i])
+			right.append(i)
 
 	# recursion
-	print quick_sort(left) + pivot + quick_sort(right)
+	return quick_sort(left) + lst[0:1] + quick_sort(right)
+
+
+# test case
+print quick_sort([5, 4, 3, 2, 1]) # [1, 2, 3, 4, 5]
