@@ -15,4 +15,5 @@ def quick_sort(lst):
 		else:
 			right.append(lst[i])
 
-
+	# recursion
+	print quick_sort(left) + pivot + quick_sort(right)
