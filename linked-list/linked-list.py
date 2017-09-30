@@ -36,7 +36,7 @@ class LinkedList(object):
 		current_node = self.head
 		if position > 1:
 			while current_node and counter < position:
-				if counter == position - 1:
+				if counter == position - 1: # insert new node at position
 					new_node.next = current_node.next
 					current_node.next = new_node
 				current_node = current_node.next
@@ -58,6 +58,9 @@ test_list.add(node_three)
 
 print test_list.head.next.next.data # prints 3
 print test_list.search(3).data # also prints 3
+
+test_list.insert(node_four, 2)
+print test_list.search(2).data
 
 
 
