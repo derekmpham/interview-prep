@@ -74,5 +74,7 @@ print test_list.search(3).data # also prints 3
 test_list.insert(node_four, 2)
 print test_list.search(2).data # prints 4
 
-
-
+test_list.remove(1)
+print test_list.search(1).data # prints 4
+print test_list.search(2).data # prints 2
+print test_list.search(3).data # prints 3
