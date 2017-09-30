@@ -31,6 +31,20 @@ class LinkedList(object):
 			counter += 1
 		return None # if position larger than length of linked list
 
+	def insert(self, new_node, position):
+		counter = 1
+		current_node = self.head
+		if position > 1:
+			while current_node and counter < position:
+				if counter == position - 1:
+					new_node.next = current_node.next
+					current_node.next = new_node
+				current_node = current_node.next
+				counter += 1
+		elif position == 1:
+			new_node = self.head
+			self.head = new_node
+
 
 # test cases
 node_one = Node(1)
