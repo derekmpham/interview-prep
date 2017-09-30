@@ -45,6 +45,18 @@ class LinkedList(object):
 			new_node = self.head
 			self.head = new_node
 
+	def remove(self, data):
+		current_node = self.head
+		previous = None
+		while current_node.data != data and current_node.next: # move through linked list until you hit node you want to delete
+			previous = current_node
+			current_node = current_node.next
+		if current_node.data == data:
+			if previous:
+				previous.next = current_node.next
+			else:
+				self.head = current_node.next
+
 
 # test cases
 node_one = Node(1)
@@ -60,9 +72,7 @@ print test_list.head.next.next.data # prints 3
 print test_list.search(3).data # also prints 3
 
 test_list.insert(node_four, 2)
-print test_list.search(2).data
-
-
+print test_list.search(2).data # prints 4
 
 
 
