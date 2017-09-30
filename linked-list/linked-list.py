@@ -32,10 +32,18 @@ class LinkedList(object):
 		return None # if position larger than length of linked list
 
 
+# test cases
+node_one = Node(1)
+node_two = Node(2)
+node_three = Node(3)
+node_four = Node(4)
 
+test_list = LinkedList(node_one)
+test_list.add(node_two)
+test_list.add(node_three)
 
-
-
+print test_list.head.next.next.data # prints 3
+print test_list.search(3).data # also prints 3
 
 
 
