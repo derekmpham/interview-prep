@@ -29,3 +29,28 @@ class LinkedList(object):
 			current_node = current_node.next
 			counter += 1
 		return None # if position larger than length of linked list
+
+	def reverse(self):
+		current_node = self.head
+		previous = None
+
+		while current_node is not None: # go through linked list from head to tail
+			next_node = current_node.next
+			current_node.next = previous # push next node behind current node
+			previous = current_node
+			current_node = next_node
+		self.head = previous # tail becomes head
+
+
+
+
+
+
+
+
+
+
+
+
+
+
