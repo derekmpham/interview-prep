@@ -9,3 +9,7 @@ class Node(object): # define constructor
 class LinkedList(object):
 	def __init__(self, head=None):
 		self.head = head
+
+	def insert_first(self, new_node):
+		new_node.next = self.head
+		self.head = new_node
