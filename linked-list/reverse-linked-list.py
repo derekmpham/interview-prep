@@ -42,15 +42,20 @@ class LinkedList(object):
 		self.head = previous # tail becomes head
 
 
+# test case
+node_one = Node(1)
+node_two = Node(2)
+node_three = Node(3)
+node_four = Node(4)
 
+test_list = LinkedList(node_one)
+test_list.add(node_two)
+test_list.add(node_three)
+test_list.add(node_four)
+print test_list.head.data # prints 1
 
-
-
-
-
-
-
-
-
-
-
+test_list.reverse()
+print test_list.head.data # prints 4
+print test_list.search(2).data # prints 3
+print test_list.search(3).data # prints 2
+print test_list.search(4).data # prints 1
