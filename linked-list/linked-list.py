@@ -1,7 +1,6 @@
 # LINKED LIST
 
-# define constructor
-class Node(object):
+class Node(object): # define constructor
 	def __init__(self, data):
 		self.data = data
 		self.next = None
