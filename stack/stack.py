@@ -15,10 +15,10 @@ class LinkedList(object):
 		self.head = new_node
 
 	def remove_first(self): # popping on first node runs much faster than going through entire list and removing end/tail node
+		deleted_node = self.head
 		if self.head:
-			deleted_node = self.head
-			temp = deleted_node.next
-			self.head = temp
+			self.head = self.head.next
+			deleted_node.next = None
 			return deleted_node
 		else:
 			return None
