@@ -29,3 +29,20 @@ class Stack(object):
 
 	def push(self, new_node):
 		self.linked_list.insert_first(new_node)
+
+	def pop(self):
+		return self.linked_list.remove_first()
+
+
+# test case
+node_one = Node(1)
+node_two = Node(2)
+node_three = Node(3)
+node_four = Node(4)
+
+test_stack = Stack(node_one)
+test_stack.push(node_two)
+test_stack.push(node_three)
+test_stack.push(node_four)
+print test_stack.pop().data # returns 4
+print test_stack.pop().data # returns 3
