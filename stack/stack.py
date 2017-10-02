@@ -26,3 +26,6 @@ class LinkedList(object):
 class Stack(object):
 	def __init__(self, top=None):
 		self.linked_list = LinkedList(top)
+
+	def push(self, new_node):
+		self.linked_list.insert_first(new_node)
