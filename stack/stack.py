@@ -22,3 +22,7 @@ class LinkedList(object):
 			return deleted_node
 		else:
 			return None
+
+class Stack(object):
+	def __init__(self, top=None):
+		self.linked_list = LinkedList(top)
