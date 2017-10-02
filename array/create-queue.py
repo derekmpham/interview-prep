@@ -6,3 +6,6 @@ class Queue:
 
 	def enqueue(self, new_element):
 		self.storage.append(new_element)
+
+	def dequeue(self):
+		return self.storage.pop(0)
