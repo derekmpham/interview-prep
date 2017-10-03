@@ -34,5 +34,6 @@ def merge_sort(arr):
 
 	return arr
 
-	
 
+# test case
+print merge_sort([5, 4, 3, 2, 1])
