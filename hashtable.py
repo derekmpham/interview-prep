@@ -23,3 +23,13 @@ class HashTable(object):
 	def calculate_hash_value(self, string):
 		value = ord(string[0])*100 + ord(string[1])
 		return value
+
+
+# TEST CASE
+test_hash = HashTable()
+print test_hash.calculate_hash_value('TEST') # prints 8469
+print test_hash.search('TEST') # prints -1
+test_hash.store('TEST')
+print test_hash.search('TEST') # prints 8469
+test_hash.store('TESTING')
+print test_hash.search('TESTING') # prints 8469
