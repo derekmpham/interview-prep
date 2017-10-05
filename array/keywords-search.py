@@ -8,7 +8,7 @@ def find_adjacent(lst, target):
 	# print s
 
 	# check process: find two elements in sequence
-	indices = []
+	indices = [] # output
 	i = 0
 	while i < len(lst):
 		if lst[i] in s:
@@ -21,3 +21,14 @@ def find_adjacent(lst, target):
 		else:
 			i += 1
 	print indices
+
+
+# TEST CASES
+lst_one = ["hello", "hi", "welcome", "greetings", "hi", "greetings", "hey", "hello"]
+target_one = ["hi", "hey", "greetings"]
+find_adjacent(lst_one, target_one) # prints [4]
+
+lst_two = ["I", "saw", "susie", "sitting", "in", "a", "shoe", "shine", "shop",
+    "where", "she", "sits", "she", "shines", "and", "where", "she", "shines", "she", "sits"]
+target_two = ["she", "sits", "shines"]
+find_adjacent(lst_two, target_two) # prints [11, 17]
