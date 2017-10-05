@@ -19,3 +19,7 @@ class HashTable(object):
 				if string in self.table[hash_value]:
 					return hash_value
 		return -1
+
+	def calculate_hash_value(self, string):
+		value = ord(string[0])*100 + ord(string[1])
+		return value
