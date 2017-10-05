@@ -11,3 +11,11 @@ class HashTable(object):
 				self.table[hash_value].append(string)
 			else:
 				self.table[hash_value] = [string]
+
+	def search(self, string):
+		hash_value = self.calculate_hash_value(string)
+		if hash_value != -1:
+			if self.table[hash_value] != None:
+				if string in self.table[hash_value]:
+					return hash_value
+		return -1
