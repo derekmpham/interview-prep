@@ -28,4 +28,16 @@ class LinkedList(object):
 			counter += 1
 		return None # if position is larger than length of linked list
 
+	def remove(self, data):
+		current_node = self.head
+		previous = None
+		while current_node.data != data and current_node.next: # move through linked list until you hit node you want to delete
+			previous = current_node
+			current_node = current_node.next
+		if current_node.data == data:
+			if previous:
+				previous.next = current_node.next
+			else:
+				self.head = current_node.next
+
 
