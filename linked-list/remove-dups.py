@@ -40,4 +40,43 @@ class LinkedList(object):
 			else:
 				self.head = current_node.next
 
+	def remove_dups(self):
+		current_node = self.head
+		next_node = current_node.next
+		dups = {}
+
+		dups[current_node.data] = True
+		# print dups[current_node.data]
+
+		while next_node:
+			if dups.has_key(next_node.data):
+				current_node.next = next_node.next
+			else:
+				dups[next_node.data] = True
+				current_node = next_node
+			next_node = next_node.next
+
+
+# test cases
+node_one = Node(1)
+node_two = Node(2)
+node_three = Node(3)
+node_four = Node(4)
+test_one = LinkedList(node_one)
+test_one.add(node_two)
+test_one.add(node_three)
+test_one.add(node_four)
+test_one.remove_dups()
+print test_one.search(1).data
+print test_one.search(2).data
+print test_one.search(3).data
+print test_one.search(4).data
+
+
+
+
+
+
+
+
 
