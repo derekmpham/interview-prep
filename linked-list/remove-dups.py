@@ -5,4 +5,6 @@ class Node(object): # define constructor
 		self.data = data
 		self.next = None
 
-
+class LinkedList(object):
+	def __init__(self, head=None):
+		self.head = head
