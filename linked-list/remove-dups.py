@@ -14,7 +14,17 @@ class LinkedList(object):
 		if self.head:
 			while current_node.next:
 				current_node = current_node.next
-				current_node.next = new_node # add to end of linked list
+			current_node.next = new_node # add to end of linked list
+		else:
+			self.head = new_node
+
+	def __repr__(self):
+		current_node = self.head
+		output_arr = []
+		while current_node:
+			output_arr.append(str(current_node.data))
+			current_node = current_node.next
+		return "->".join(output_arr)
 
 	def search(self, position):
 		counter = 1
@@ -62,21 +72,16 @@ node_one = Node(1)
 node_two = Node(2)
 node_three = Node(3)
 node_four = Node(4)
+node_five = Node(1)
+node_six = Node(2)
 test_one = LinkedList(node_one)
 test_one.add(node_two)
 test_one.add(node_three)
 test_one.add(node_four)
 test_one.remove_dups()
-print test_one.search(1).data
-print test_one.search(2).data
-print test_one.search(3).data
-print test_one.search(4).data
-
-
-
-
-
-
-
-
-
+print test_one # prints "1->2->3->4"
+test_one.add(node_five)
+test_one.add(node_six)
+print test_one # prints "1->2->3->4->1->2"
+test_one.remove_dups()
+print test_one # prints "1->2->3->4"
