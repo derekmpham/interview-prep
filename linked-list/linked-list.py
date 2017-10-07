@@ -18,6 +18,14 @@ class LinkedList(object):
 		else:
 			self.head = new_node
 
+	def __repr__(self):
+		current_node = self.head
+		output_arr = []
+		while current_node:
+			output_arr.append(str(current_node.data))
+			current_node = current_node.next
+		return "->".join(output_arr)
+
 	def search(self, position):
 		counter = 1
 		current_node = self.head
@@ -74,6 +82,4 @@ test_list.insert(node_four, 2)
 print test_list.search(2).data # prints 4
 
 test_list.remove(1)
-print test_list.search(1).data # prints 4
-print test_list.search(2).data # prints 2
-print test_list.search(3).data # prints 3
+print test_list # prints "4->2->3"
