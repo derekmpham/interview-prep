@@ -17,3 +17,8 @@ def first_non_repeating_character(s):
 			return j
 
 	return '_'
+
+
+# test cases
+print first_non_repeating_character("abacabad") # prints "c"
+print first_non_repeating_character("abacabaabacaba") # prints "_"
