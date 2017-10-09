@@ -3,16 +3,16 @@
 # input string contains only lowercase English letters
 
 def first_non_repeating_character(s):
-	char_in_str = []
+	chars_in_str = []
 	dup_list = {}
 
-	for i in range(len(s)):
-		if s[i] in char_in_str:
+	for i in range(len(s)): # fill character reference array and identify repeating characters in string
+		if s[i] in chars_in_str:
 			dup_list[s[i]] = 1
 		else:
-			char_in_str.append(s[i])
+			chars_in_str.append(s[i])
 
-	for j in char_in_str:
+	for j in chars_in_str: # find first non-repeating character
 		if not dup_list.has_key(j):
 			return j
 
