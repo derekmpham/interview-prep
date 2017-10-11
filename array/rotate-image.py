@@ -8,7 +8,7 @@ def rotate_image(a):
 		return a
 	else:
 		for i in range(n/2):
-			for j in range(n-i-1):
+			for j in range(i, n-i-1):
 				temp = a[i][j]
 				a[i][j] = a[n-1-j][i]
 				a[n-1-j][i] = a[n-1-i][n-1-j]
