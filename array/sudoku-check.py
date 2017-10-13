@@ -20,9 +20,9 @@ def check_columns(grid):
 				ref_check[grid[j][i]] = 1
 	return True
 
-def create_sub_grid(grid):
+def check_array(array):
 	ref_check = {}
-	for square in grid:
+	for square in array:
 		if square != '.' and square in ref_check:
 			return False
 		else:
