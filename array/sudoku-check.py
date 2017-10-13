@@ -28,3 +28,12 @@ def check_columns(grid):
 			row += 1
 		column += 1
 	return True
+
+def create_sub_grid(grid):
+	ref_check = {}
+	for square in grid:
+		if square != '.' and square in ref_check:
+			return False
+		else:
+			ref_check[square] = 1
+	return True
