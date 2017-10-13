@@ -11,18 +11,13 @@ def check_rows(grid):
 	return True
 
 def check_columns(grid):
-	column = 0
-	length = len(grid)
-	while column < length:
-		row = 0
+	for i in range(9):
 		ref_check = {}
-		while row < length:
-			if grid[row][column] != '.' and grid[row][column] in ref_check:
+		for j in range(9):
+			if grid[j][i] != '.' and grid[j][i] in ref_check:
 				return False
 			else:
-				ref_check[grid[row][column]] = 1
-			row += 1
-		column += 1
+				ref_check[grid[j][i]] = 1
 	return True
 
 def create_sub_grid(grid):
