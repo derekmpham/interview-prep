@@ -13,3 +13,18 @@ def check_rows(grid):
 				j += 1
 			i += 1
 		return True
+
+def check_columns(grid):
+	column = 0
+	length = len(grid)
+	while column < length:
+		row = 0
+		ref_check = {}
+		while row < length:
+			if grid[row][column] != '.' and grid[row][column] in ref_check:
+				return False
+			else:
+				ref_check[grid[row][column]] = 1
+			row += 1
+		column += 1
+	return True
