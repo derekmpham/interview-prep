@@ -30,18 +30,14 @@ def check_array(array):
 	return True
 
 def check_sub_grid(grid):
-	sub_grid = []
 	for row in range(0, 9, 3):
 		for i in range(0, 9, 3):
 			a = []
 			for j in range(row, row + 3):
 				for column in range(i, i + 3):
 					a.append(grid[j][column])
-					sub_grid.append(a)
-
-	for row in sub_grid:
-		if not create_sub_grid(row):
-			return False
+				if not check_array(a):
+					return False
 	return True
 
 def sudoku_check(grid):
