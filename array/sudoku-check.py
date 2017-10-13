@@ -52,3 +52,6 @@ def check_sub_grid(grid):
 		if not create_sub_grid(row):
 			return False
 	return True
+
+def sudoku_check(grid):
+	return check_rows(grid) and check_columns(grid) and check_sub_grid(grid)
