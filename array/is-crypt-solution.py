@@ -6,3 +6,12 @@ def isCryptSolution(crypt, solution):
 	dic = {}
 	for key in solution:
 		dic[key[0]] = int(key[1])
+
+	# generate input strings into numbers
+	arr = []
+	for string in crypt:
+		arr.append(0)
+		for letter in string:
+			arr[-1] = arr[-1]*10 + dic[letter]
+
+			
