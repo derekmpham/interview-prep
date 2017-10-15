@@ -14,4 +14,10 @@ def isCryptSolution(crypt, solution):
 		for letter in string:
 			arr[-1] = arr[-1]*10 + dic[letter]
 
-			
+	# check if sum of decoded numbers of first and second strings equal to decoded number of third string
+	if arr[0] + arr[1] == arr[2]:
+		if len(`arr[0]`) == len(crypt[0]): # check if decoded number of first string has any leading zero
+			if len(`arr[1]`) == len(crypt[1]): # check if decoded number of second string has any leading zero
+				if len(`arr[2]`) == len(crypt[2]): # check if decoded number of third string has any leading zero
+					return True
+	return False
