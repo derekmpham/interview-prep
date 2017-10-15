@@ -21,3 +21,38 @@ def isCryptSolution(crypt, solution):
 				if len(`arr[2]`) == len(crypt[2]): # check if decoded number of third string has any leading zero
 					return True
 	return False
+
+
+# test cases
+crypt_one = ["SEND", 
+ 			 "MORE", 
+			 "MONEY"]
+solution_one = [["O","0"], 
+				["M","1"], 
+				["Y","2"], 
+				["E","5"], 
+				["N","6"], 
+				["D","7"], 
+				["R","8"], 
+				["S","9"]]
+print isCryptSolution(crypt_one, solution_one) # prints True
+
+crypt_two = ["TEN", 
+			 "TWO", 
+			 "ONE"]
+solution_two = [["O","1"], 
+				["T","0"], 
+				["W","9"], 
+				["E","5"], 
+				["N","4"]]
+print isCryptSolution(crypt_two, solution_two) # prints False
+
+crypt_three = ["ONE", 
+			   "ONE", 
+			   "TWO"]
+solution_three = [["O","2"], 
+				  ["T","4"], 
+				  ["W","6"], 
+				  ["E","1"], 
+				  ["N","3"]]
+print isCryptSolution(crypt_three, solution_three) # prints True
