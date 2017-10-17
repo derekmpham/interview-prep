@@ -17,3 +17,11 @@ class LinkedList(object):
 			current_node.next = new_node
 		else:
 			self.head = new_node
+
+	def __repr__(self):
+		current_node = self.head
+		output_arr = []
+		while current_node:
+			output_arr.append(str(current_node.data))
+			current_node = current_node.next
+		return "->".join(output_arr)
