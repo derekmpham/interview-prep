@@ -8,3 +8,12 @@ class Node(object): # define constructor
 class LinkedList(object):
 	def __init__(self, head=None):
 		self.head = head
+
+	def add(self, new_node):
+		current_node = self.head
+		if self.head:
+			while current_node.next:
+				current_node = current_node.next
+			current_node.next = new_node
+		else:
+			self.head = new_node
