@@ -3,3 +3,7 @@ class Node(object): # define constructor
 	def __init__(self, value):
 		self.value = value
 		self.next = None
+
+def is_list_palindrome(l):
+	if not l.value or not l.next.value:
+		return True
