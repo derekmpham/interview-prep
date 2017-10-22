@@ -7,3 +7,11 @@ class Node(object): # define constructor
 def is_list_palindrome(l):
 	if not l.value or not l.next.value:
 		return True
+
+def create_nodes(l):
+	root = Node(-1)
+	current_node = root
+	for value in l:
+		current_node.next = Node(value)
+		current_node = current_node.next
+	return root.next
