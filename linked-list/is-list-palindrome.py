@@ -17,6 +17,9 @@ def is_list_palindrome(l):
 		fast_node = fast_node.next.next
 		slow_node = slow_node.next
 
+	second_head = Node(slow_node.next)
+	slow_node.next = None
+
 def create_nodes(l):
 	root = Node(-1)
 	current_node = root
