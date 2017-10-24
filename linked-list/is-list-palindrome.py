@@ -8,28 +8,15 @@ def is_list_palindrome(l):
 	if not l.value or not l.next.value:
 		return True
 
-	fake_head = Node(None)
-	fake_head.next = l
-	fast_node = fake_head
-	slow_node = fake_head
-
 	# find center of list
-	while fast_node.next and fast_node.next.next:
-		fast_node = fast_node.next.next
-		slow_node = slow_node.next
+	fast = l
+	slow = l
 
-	second_head = Node(slow_node.next)
-	slow_node.next = None
+	while fast.next and fast.next.next:
+		fast = fast.next.next
+		slow = slow.next
 
-	# reverse second part of list
-	part_one = Node(second_head)
-	part_two = part_one.next
 
-	while part_one and part_two:
-		temp = Node(part_two.next)
-		part_two.next = part_one
-		part_one = part_two
-		part_two = temp
 
 
 def create_nodes(l):
