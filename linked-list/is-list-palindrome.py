@@ -16,7 +16,20 @@ def is_list_palindrome(l):
 		fast = fast.next.next
 		slow = slow.next
 
+	second_head = Node(slow.next.value)
+	slow.next = None
 
+	# reverse second part of list
+	part_one = second_head
+	part_two = part_one.next
+
+	while part_one and part_two:
+		temp = Node(part_two.next.value)
+		part_two.next = part_one
+		part_one = part_two
+		part_two = temp
+
+	second_head.next = None
 
 
 def create_nodes(l):
