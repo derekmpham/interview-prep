@@ -5,7 +5,7 @@ class Node(object): # define constructor
 		self.next = None
 
 def is_list_palindrome(l):
-	if l.value is None:
+	if l is None or l.next is None:
 		return True
 
 	# find center of list
@@ -24,6 +24,14 @@ def is_list_palindrome(l):
 		current_node = p
 		p = next
 
+	# check for palindrome
+	part_one = current_node
+	part_two = l
+	while part_one and part_one.value == part_two.value:
+		part_one = part_one.next
+		part_two = part_two.next
+
+	return part_one is None
 
 def create_nodes(l):
 	root = Node(-1)
@@ -34,4 +42,4 @@ def create_nodes(l):
 	return root.next
 
 
-is_list_palindrome(create_nodes([1, 2, 3, 4]))
+print is_list_palindrome(create_nodes([1, 2, 3, 4]))
