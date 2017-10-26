@@ -42,4 +42,8 @@ def create_nodes(l):
 	return root.next
 
 
-print is_list_palindrome(create_nodes([1, 2, 3, 4]))
+# test cases
+print is_list_palindrome(create_nodes([0, 1, 0])) # prints true
+print is_list_palindrome(create_nodes([1, 2, 2, 3])) # prints false
+print is_list_palindrome(create_nodes([1, 1000000000, -1000000000, -1000000000, 1000000000, 1])) # prints true
+print is_list_palindrome(create_nodes([8])) # prints true
