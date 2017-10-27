@@ -12,3 +12,10 @@ def amend_sentence(s):
 		else: # add already lowercased letter to output sentence
 			sentence += char
 	return sentence
+
+
+# test cases
+print amend_sentence("WhatIsUp") # prints "what is up"
+print amend_sentence("Hey") # prints "hey"
+print amend_sentence("iEiMCyKAsdfGMPa") # prints "i ei m cy k asdf g m pa"
+print amend_sentence("VizQEogigkRZJacVELulHjG") # prints "viz q eogigk r z jac v e lul hj g"
