@@ -12,3 +12,6 @@ def find_substring(string, substr):
 				if j == substr_len:
 					return i - substr_len
 					j += 1
+				else:
+					j = 0
+		i += 1
