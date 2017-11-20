@@ -15,3 +15,5 @@ def find_substring(string, substr):
 				else:
 					j = 0
 		i += 1
+
+	return -1
