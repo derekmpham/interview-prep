@@ -3,3 +3,12 @@
 def find_substring(string, substr):
 	string_len = len(string)
 	substr_len = len(substr)
+	i = 0
+
+	if substr_len >= 1:
+		i = 0
+		while i < string_len:
+			if string[i] == substr[j]:
+				if j == substr_len:
+					return i - substr_len
+					j += 1
