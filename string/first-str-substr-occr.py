@@ -12,24 +12,29 @@ def find_substring(string, substr):
 # test 1
 string = "Hello"
 substr = "eo"
-print find_substring(string, substr) # -1
+assert find_substring(string, substr) == -1
 
 # test 2
 string = "Hello"
 substr = "el"
-print find_substring(string, substr) # 1
+assert find_substring(string, substr) == 1
 
 # test 3
 string = "a"
 substr = "a"
-print find_substring(string, substr) # 0
+assert find_substring(string, substr) == 0
 
 # test 4
 string = "a"
 substr = "A"
-print find_substring(string, substr) # -1
+assert find_substring(string, substr) == -1
 
 # test 5
 string = "sst"
 substr = "st"
-print find_substring(string, substr) # 1
+assert find_substring(string, substr) == 1
+
+# test 6
+string = "lrnkbldxguzgcseccinlizyogwqzlifxcthdgmanjztlt"
+substr = "an" # 38
+assert find_substring(string, substr) == 38
